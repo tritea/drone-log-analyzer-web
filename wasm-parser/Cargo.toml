@@ -1,0 +1,27 @@
+[package]
+name = "dla-parser"
+version = "0.1.0"
+edition = "2021"
+description = "Flight-log parser (dataflash/ulog/tlog) for the drone-log-analyzer frontend, compiled to wasm32."
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+# float_roundtrip: exact f64 parsing — the default fast path can be 1 ULP off,
+# which breaks golden value comparisons at full precision.
+serde_json = { version = "1", features = ["float_roundtrip"] }
+# Pure-Rust XZ decode for PX4 metadata_events (added for the ulog backend).
+lzma-rs = "0.3"
+mavlink = { version = "0.18.0", default-features = false, features = ["dialect-ardupilotmega", "std"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+serde-wasm-bindgen = "0.6"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+panic = "abort"

@@ -1,0 +1,30 @@
+/** 跨域通用词条：应用标题、通用动作、时长/单位等。 */
+export default {
+  app: {
+    title: '飞控日志分析',
+  },
+  mobile: {
+    openDrawerTitle: '打开曲线列表',
+    drawerTitle: '曲线列表',
+    closeDrawer: '关闭',
+    expandDrawer: '全屏显示',
+    collapseDrawer: '退出全屏',
+    landscapeTitle: '建议横屏使用',
+    landscapeText: '横屏查看曲线更舒适，可点击下方按钮锁定横屏',
+    landscapeEnter: '进入横屏',
+    landscapeManualHint: '当前浏览器不支持锁定横屏，请手动旋转设备',
+    exitFocusTitle: '退出专注模式',
+  },
+  close: '关闭',
+  cancel: '取消',
+  save: '保存',
+  confirm: '确认',
+  refresh: '刷新',
+  add: '添加',
+  done: '完成',
+  delete: '删除',
+  search: '搜索...',
+  duration: '{m}分{sec}秒',
+  durationSec: '{sec}秒',
+  durationZero: '0s',
+}

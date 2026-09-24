@@ -1,0 +1,30 @@
+/** Cross-domain common messages: app title, shared actions, duration/units. */
+export default {
+  app: {
+    title: 'Drone Log Analyzer',
+  },
+  mobile: {
+    openDrawerTitle: 'Open curve list',
+    drawerTitle: 'Curves',
+    closeDrawer: 'Close',
+    expandDrawer: 'Fullscreen',
+    collapseDrawer: 'Exit fullscreen',
+    landscapeTitle: 'Landscape recommended',
+    landscapeText: 'Curves are more comfortable in landscape. Tap the button below to lock orientation',
+    landscapeEnter: 'Enter landscape',
+    landscapeManualHint: 'This browser cannot lock orientation; please rotate your device manually',
+    exitFocusTitle: 'Exit focus mode',
+  },
+  close: 'Close',
+  cancel: 'Cancel',
+  save: 'Save',
+  confirm: 'Confirm',
+  refresh: 'Refresh',
+  add: 'Add',
+  done: 'Done',
+  delete: 'Delete',
+  search: 'Search...',
+  duration: '{m}m {sec}s',
+  durationSec: '{sec}s',
+  durationZero: '0s',
+}

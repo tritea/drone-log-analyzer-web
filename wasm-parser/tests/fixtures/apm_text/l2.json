@@ -1,0 +1,2651 @@
+{
+  "commands": [
+    {
+      "timeMs": 1646654382700,
+      "commandTotal": 4,
+      "sequence": 0,
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 34.1234567,
+      "longitude": -118.1234567,
+      "altitude": 100.5,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT"
+    },
+    {
+      "timeMs": 1646654382800,
+      "commandTotal": 4,
+      "sequence": 1,
+      "command": 22,
+      "commandName": "NAV_TAKEOFF",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "altitude": 25,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT"
+    }
+  ],
+  "errors": [
+    {
+      "lineno": 25,
+      "timeMs": 1646654382300,
+      "subsys": 12,
+      "eCode": 5,
+      "subsysName": "CRASH_CHECK",
+      "errorCode": "",
+      "description": "#5"
+    },
+    {
+      "lineno": 26,
+      "timeMs": 1646654382400,
+      "subsys": 3,
+      "eCode": 17,
+      "subsysName": "COMPASS",
+      "errorCode": "",
+      "description": "#17"
+    }
+  ],
+  "events": [
+    {
+      "lineno": 27,
+      "timeMs": 1646654382500,
+      "id": 42,
+      "name": "FENCE_DISABLE（围栏停用）"
+    },
+    {
+      "lineno": 28,
+      "timeMs": 1646654382600,
+      "id": 7,
+      "name": ""
+    }
+  ],
+  "fields": {
+    "ATT": [
+      {
+        "name": "TimeMS",
+        "type": "I",
+        "min": 500,
+        "max": 2400000,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Roll",
+        "type": "f",
+        "min": 12.5,
+        "max": 14.5,
+        "count": 3,
+        "isNumeric": true
+      }
+    ],
+    "BAT": [
+      {
+        "name": "TimeMS",
+        "type": "I",
+        "min": 1000,
+        "max": 1200,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Instance",
+        "type": "B",
+        "min": 0,
+        "max": 1,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Volt",
+        "type": "f",
+        "min": 12.1,
+        "max": 12.3,
+        "count": 3,
+        "isNumeric": true
+      }
+    ],
+    "BAT1": [
+      {
+        "name": "TimeMS",
+        "type": "I",
+        "min": 1000,
+        "max": 1200,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Instance",
+        "type": "B",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Volt",
+        "type": "f",
+        "min": 12.1,
+        "max": 12.3,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "BAT2": [
+      {
+        "name": "TimeMS",
+        "type": "I",
+        "min": 1100,
+        "max": 1100,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Instance",
+        "type": "B",
+        "min": 1,
+        "max": 1,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Volt",
+        "type": "f",
+        "min": 12.2,
+        "max": 12.2,
+        "count": 1,
+        "isNumeric": true
+      }
+    ],
+    "CMD": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1700000,
+        "max": 1800000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "CTot",
+        "type": "H",
+        "min": 4,
+        "max": 4,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "CNum",
+        "type": "H",
+        "min": 0,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "CId",
+        "type": "H",
+        "min": 16,
+        "max": 22,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Prm1",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Prm2",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Prm3",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Prm4",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Lat",
+        "type": "L",
+        "min": 0,
+        "max": 341234567,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Lng",
+        "type": "L",
+        "min": -1181234567,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "f",
+        "min": 25,
+        "max": 100.5,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Frame",
+        "type": "B",
+        "min": 3,
+        "max": 3,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "ERR": [
+      {
+        "name": "TimeUS",
+        "type": "I",
+        "min": 1300000,
+        "max": 1400000,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Subsys",
+        "type": "B",
+        "min": 3,
+        "max": 12,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "ECode",
+        "type": "B",
+        "min": 5,
+        "max": 17,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "EV": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1500000,
+        "max": 1600000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "Id",
+        "type": "B",
+        "min": 7,
+        "max": 42,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "GPS": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1000000,
+        "max": 1200000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "I",
+        "type": "B",
+        "min": 0,
+        "max": 1,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "GMS",
+        "type": "I",
+        "min": 129600000,
+        "max": 129600200,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "GWk",
+        "type": "I",
+        "min": 2200,
+        "max": 2200,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "B",
+        "min": 42,
+        "max": 44,
+        "count": 3,
+        "isNumeric": true
+      }
+    ],
+    "GPS1": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1000000,
+        "max": 1200000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "I",
+        "type": "B",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "GMS",
+        "type": "I",
+        "min": 129600000,
+        "max": 129600200,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "GWk",
+        "type": "I",
+        "min": 2200,
+        "max": 2200,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "B",
+        "min": 42,
+        "max": 44,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "GPS2": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1100000,
+        "max": 1100000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "I",
+        "type": "B",
+        "min": 1,
+        "max": 1,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "GMS",
+        "type": "I",
+        "min": 129600100,
+        "max": 129600100,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "GWk",
+        "type": "I",
+        "min": 2200,
+        "max": 2200,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "B",
+        "min": 43,
+        "max": 43,
+        "count": 1,
+        "isNumeric": true
+      }
+    ],
+    "MAVC": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1900000,
+        "max": 2000000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "TS",
+        "type": "B",
+        "min": 255,
+        "max": 255,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "TC",
+        "type": "B",
+        "min": 1,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "SS",
+        "type": "B",
+        "min": 254,
+        "max": 254,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "SC",
+        "type": "B",
+        "min": 190,
+        "max": 190,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Fr",
+        "type": "B",
+        "min": 0,
+        "max": 3,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Cmd",
+        "type": "H",
+        "min": 16,
+        "max": 120,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "P1",
+        "type": "f",
+        "min": 0,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "P2",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "P3",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "P4",
+        "type": "f",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "X",
+        "type": "i",
+        "min": 0,
+        "max": 341234567,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Y",
+        "type": "i",
+        "min": -1181234567,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Z",
+        "type": "f",
+        "min": 0,
+        "max": 100.5,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Res",
+        "type": "B",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "WL",
+        "type": "B",
+        "min": 0,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "MODE": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 2100000,
+        "max": 2200000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "Mode",
+        "type": "B",
+        "min": 4,
+        "max": 5,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "ModeNum",
+        "type": "B",
+        "min": 4,
+        "max": 5,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "PARM": [
+      {
+        "name": "TimeUS",
+        "type": "Q",
+        "min": 1000,
+        "max": 3000,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "Name",
+        "type": "N",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "Value",
+        "type": "f",
+        "min": 0.135,
+        "max": 300,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Default",
+        "type": "f",
+        "min": 0.1,
+        "max": 100,
+        "count": 3,
+        "isNumeric": true
+      }
+    ]
+  },
+  "logDefs": {
+    "format": "apm",
+    "eventNames": {
+      "10": "ARMED（解锁）",
+      "11": "DISARMED（加锁）",
+      "15": "AUTO_ARMED（自动解锁起飞）",
+      "163": "SURFACED",
+      "164": "NOT_SURFACED",
+      "165": "BOTTOMED",
+      "166": "NOT_BOTTOMED",
+      "17": "LAND_COMPLETE_MAYBE（可能已着陆）",
+      "18": "LAND_COMPLETE（着陆完成）",
+      "19": "LOST_GPS（GPS 失锁）",
+      "21": "FLIP_START",
+      "22": "FLIP_END",
+      "25": "SET_HOME（设定 Home 点）",
+      "26": "SET_SIMPLE_ON",
+      "27": "SET_SIMPLE_OFF",
+      "28": "NOT_LANDED（已离地）",
+      "29": "SET_SUPERSIMPLE_ON",
+      "30": "AUTOTUNE_INITIALISED",
+      "31": "AUTOTUNE_OFF",
+      "32": "AUTOTUNE_RESTART",
+      "33": "AUTOTUNE_SUCCESS",
+      "34": "AUTOTUNE_FAILED",
+      "35": "AUTOTUNE_REACHED_LIMIT",
+      "36": "AUTOTUNE_PILOT_TESTING",
+      "37": "AUTOTUNE_SAVEDGAINS",
+      "38": "SAVE_TRIM",
+      "39": "SAVEWP_ADD_WP",
+      "41": "FENCE_ENABLE（围栏启用）",
+      "42": "FENCE_DISABLE（围栏停用）",
+      "43": "ACRO_TRAINER_OFF",
+      "44": "ACRO_TRAINER_LEVELING",
+      "45": "ACRO_TRAINER_LIMITED",
+      "46": "GRIPPER_GRAB",
+      "47": "GRIPPER_RELEASE",
+      "49": "PARACHUTE_DISABLED",
+      "50": "PARACHUTE_ENABLED",
+      "51": "PARACHUTE_RELEASED（降落伞已释放）",
+      "52": "LANDING_GEAR_DEPLOYED（起落架已放下）",
+      "53": "LANDING_GEAR_RETRACTED（起落架已收起）",
+      "54": "MOTORS_EMERGENCY_STOPPED（电机急停）",
+      "55": "MOTORS_EMERGENCY_STOP_CLEARED（电机急停解除）",
+      "56": "MOTORS_INTERLOCK_DISABLED",
+      "57": "MOTORS_INTERLOCK_ENABLED",
+      "58": "ROTOR_RUNUP_COMPLETE（旋翼加速完成）",
+      "59": "ROTOR_SPEED_BELOW_CRITICAL（旋翼低于临界转速）",
+      "60": "EKF_ALT_RESET（EKF 高度复位）",
+      "61": "LAND_CANCELLED_BY_PILOT（飞行员取消着陆）",
+      "62": "EKF_YAW_RESET（EKF 航向复位）",
+      "63": "AVOIDANCE_ADSB_ENABLE",
+      "64": "AVOIDANCE_ADSB_DISABLE",
+      "65": "AVOIDANCE_PROXIMITY_ENABLE",
+      "66": "AVOIDANCE_PROXIMITY_DISABLE",
+      "67": "GPS_PRIMARY_CHANGED（GPS 主从切换）",
+      "71": "ZIGZAG_STORE_A",
+      "72": "ZIGZAG_STORE_B",
+      "73": "LAND_REPO_ACTIVE",
+      "74": "STANDBY_ENABLE",
+      "75": "STANDBY_DISABLE",
+      "80": "FENCE_FLOOR_ENABLE",
+      "81": "FENCE_FLOOR_DISABLE",
+      "85": "EK3_SOURCES_SET_TO_PRIMARY（EK3 源切主）",
+      "86": "EK3_SOURCES_SET_TO_SECONDARY（EK3 源切备）",
+      "87": "EK3_SOURCES_SET_TO_TERTIARY（EK3 源切第三）",
+      "90": "AIRSPEED_PRIMARY_CHANGED（空速计主从切换）"
+    },
+    "errorSubsystems": {
+      "1": "MAIN",
+      "10": "FLIGHT_MODE",
+      "11": "GPS",
+      "12": "CRASH_CHECK",
+      "13": "FLIP",
+      "14": "AUTOTUNE",
+      "15": "PARACHUTES",
+      "16": "EKFCHECK",
+      "17": "FAILSAFE_EKFINAV",
+      "18": "BARO",
+      "19": "CPU",
+      "2": "RADIO",
+      "20": "FAILSAFE_ADSB",
+      "21": "TERRAIN",
+      "22": "NAVIGATION",
+      "23": "FAILSAFE_TERRAIN",
+      "24": "EKF_PRIMARY",
+      "25": "THRUST_LOSS_CHECK",
+      "26": "FAILSAFE_SENSORS",
+      "27": "FAILSAFE_LEAK",
+      "28": "PILOT_INPUT",
+      "29": "FAILSAFE_VIBE",
+      "3": "COMPASS",
+      "30": "INTERNAL_ERROR",
+      "31": "FAILSAFE_DEADRECKON",
+      "4": "OPTFLOW",
+      "5": "FAILSAFE_RADIO",
+      "6": "FAILSAFE_BATT",
+      "7": "FAILSAFE_GPS",
+      "8": "FAILSAFE_GCS",
+      "9": "FAILSAFE_FENCE"
+    },
+    "errorCodes": {
+      "1": {
+        "1": "MAIN_INS_DELAY"
+      },
+      "11": {
+        "2": "GPS_GLITCH"
+      },
+      "12": {
+        "1": "CRASH_CHECK_CRASH",
+        "2": "CRASH_CHECK_LOSS_OF_CONTROL"
+      },
+      "13": {
+        "2": "FLIP_ABANDONED"
+      },
+      "15": {
+        "2": "PARACHUTE_TOO_LOW",
+        "3": "PARACHUTE_LANDED"
+      },
+      "16": {
+        "0": "EKFCHECK_VARIANCE_CLEARED",
+        "2": "EKFCHECK_BAD_VARIANCE"
+      },
+      "17": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "18": {
+        "2": "BARO_GLITCH",
+        "3": "BAD_DEPTH"
+      },
+      "2": {
+        "2": "RADIO_LATE_FRAME"
+      },
+      "20": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "21": {
+        "2": "MISSING_TERRAIN_DATA"
+      },
+      "22": {
+        "2": "FAILED_TO_SET_DESTINATION",
+        "3": "RESTARTED_RTL",
+        "4": "FAILED_CIRCLE_INIT",
+        "5": "DEST_OUTSIDE_FENCE",
+        "6": "RTL_MISSING_RNGFND"
+      },
+      "23": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "26": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "27": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "29": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "30": {
+        "1": "INTERNAL_ERRORS_DETECTED"
+      },
+      "31": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "5": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "6": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "7": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "8": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      },
+      "9": {
+        "0": "FAILSAFE_RESOLVED",
+        "1": "FAILSAFE_OCCURRED"
+      }
+    },
+    "generalErrorCodes": {
+      "0": "ERROR_RESOLVED",
+      "1": "FAILED_TO_INITIALISE",
+      "4": "UNHEALTHY"
+    },
+    "units": {}
+  },
+  "mavlinkCommands": [
+    {
+      "timeMs": 1646654382900,
+      "targetSystem": 255,
+      "targetComponent": 1,
+      "sourceSystem": 254,
+      "sourceComponent": 190,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT",
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 34.1234567,
+      "longitude": -118.1234567,
+      "altitude": 100.5,
+      "result": 0,
+      "resultName": "ACCEPTED",
+      "wasCommandLong": false
+    },
+    {
+      "timeMs": 1646654383000,
+      "targetSystem": 255,
+      "targetComponent": 1,
+      "sourceSystem": 254,
+      "sourceComponent": 190,
+      "frame": 0,
+      "frameName": "GLOBAL",
+      "command": 120,
+      "commandName": "DO_SET_SERVO",
+      "param1": 1,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "altitude": 0,
+      "result": 0,
+      "resultName": "ACCEPTED",
+      "wasCommandLong": true
+    }
+  ],
+  "messageTypes": [
+    {
+      "name": "ATT",
+      "fields": [
+        "TimeMS",
+        "Roll"
+      ],
+      "count": 3,
+      "hasData": false
+    },
+    {
+      "name": "BAT",
+      "fields": [
+        "TimeMS",
+        "Instance",
+        "Volt"
+      ],
+      "count": 3,
+      "hasData": false
+    },
+    {
+      "name": "BAT1",
+      "fields": [
+        "TimeMS",
+        "Instance",
+        "Volt"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "BAT2",
+      "fields": [
+        "TimeMS",
+        "Instance",
+        "Volt"
+      ],
+      "count": 1,
+      "hasData": false
+    },
+    {
+      "name": "CMD",
+      "fields": [
+        "CTot",
+        "CNum",
+        "CId",
+        "Prm1",
+        "Prm2",
+        "Prm3",
+        "Prm4",
+        "Lat",
+        "Lng",
+        "Alt",
+        "Frame"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "ERR",
+      "fields": [
+        "TimeUS",
+        "Subsys",
+        "ECode"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "EV",
+      "fields": [
+        "Id"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "GPS",
+      "fields": [
+        "I",
+        "GMS",
+        "GWk",
+        "Alt"
+      ],
+      "count": 3,
+      "hasData": false
+    },
+    {
+      "name": "GPS1",
+      "fields": [
+        "I",
+        "GMS",
+        "GWk",
+        "Alt"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "GPS2",
+      "fields": [
+        "I",
+        "GMS",
+        "GWk",
+        "Alt"
+      ],
+      "count": 1,
+      "hasData": false
+    },
+    {
+      "name": "MAVC",
+      "fields": [
+        "TS",
+        "TC",
+        "SS",
+        "SC",
+        "Fr",
+        "Cmd",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "X",
+        "Y",
+        "Z",
+        "Res",
+        "WL"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "MODE",
+      "fields": [
+        "Mode",
+        "ModeNum"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "PARM",
+      "fields": [
+        "Value",
+        "Default"
+      ],
+      "count": 3,
+      "hasData": false
+    }
+  ],
+  "messages": [
+    {
+      "lineno": 11,
+      "timeMs": 1646654381010,
+      "message": "ArduCopter V4.5.6 (1931a2b1)"
+    },
+    {
+      "lineno": 12,
+      "timeMs": 1646654381020,
+      "message": "Frame: QUADROTOR"
+    },
+    {
+      "lineno": 23,
+      "timeMs": 1646654382234,
+      "message": "EKF lane switch"
+    },
+    {
+      "lineno": 24,
+      "timeMs": 1646654382235,
+      "message": "barometer calibration"
+    }
+  ],
+  "modeChanges": [
+    {
+      "lineno": 33,
+      "timeMs": 1646654383100,
+      "mode": "GUIDED",
+      "modeNum": 4
+    },
+    {
+      "lineno": 34,
+      "timeMs": 1646654383200,
+      "mode": "LOITER",
+      "modeNum": 5
+    }
+  ],
+  "parameters": [
+    {
+      "name": "ATC_RAT_RLL_P",
+      "value": 0.145
+    },
+    {
+      "name": "WPNAV_SPEED",
+      "value": 300
+    }
+  ],
+  "series": {
+    "ATT.Roll": {
+      "times": [
+        0.499,
+        2299.999,
+        2399.999
+      ],
+      "values": [
+        12.5,
+        13.5,
+        14.5
+      ]
+    },
+    "ATT.TimeMS": {
+      "times": [
+        0.499,
+        2299.999,
+        2399.999
+      ],
+      "values": [
+        500,
+        2300000,
+        2400000
+      ]
+    },
+    "BAT.Instance": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        0,
+        1,
+        0
+      ]
+    },
+    "BAT.TimeMS": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        1000,
+        1100,
+        1200
+      ]
+    },
+    "BAT.Volt": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        12.100000381469727,
+        12.199999809265137,
+        12.300000190734863
+      ]
+    },
+    "BAT1.Instance": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "BAT1.TimeMS": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        1000,
+        1200
+      ]
+    },
+    "BAT1.Volt": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        12.100000381469727,
+        12.300000190734863
+      ]
+    },
+    "BAT2.Instance": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        1
+      ]
+    },
+    "BAT2.TimeMS": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        1100
+      ]
+    },
+    "BAT2.Volt": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        12.199999809265137
+      ]
+    },
+    "CMD.Alt": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        100.5,
+        25
+      ]
+    },
+    "CMD.CId": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        16,
+        22
+      ]
+    },
+    "CMD.CNum": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        0,
+        1
+      ]
+    },
+    "CMD.CTot": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        4,
+        4
+      ]
+    },
+    "CMD.Frame": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        3,
+        3
+      ]
+    },
+    "CMD.Lat": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        341234560,
+        0
+      ]
+    },
+    "CMD.Lng": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        -1181234560,
+        0
+      ]
+    },
+    "CMD.Prm1": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "CMD.Prm2": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "CMD.Prm3": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "CMD.Prm4": {
+      "times": [
+        1.699,
+        1.799
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "CMD.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "ERR.ECode": {
+      "times": [
+        1.299,
+        1.399
+      ],
+      "values": [
+        5,
+        17
+      ]
+    },
+    "ERR.Subsys": {
+      "times": [
+        1.299,
+        1.399
+      ],
+      "values": [
+        12,
+        3
+      ]
+    },
+    "ERR.TimeUS": {
+      "times": [
+        1.299,
+        1.399
+      ],
+      "values": [
+        1300000,
+        1400000
+      ]
+    },
+    "EV.Id": {
+      "times": [
+        1.499,
+        1.599
+      ],
+      "values": [
+        42,
+        7
+      ]
+    },
+    "EV.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "GPS.Alt": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        42,
+        43,
+        44
+      ]
+    },
+    "GPS.GMS": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        129600000,
+        129600096,
+        129600200
+      ]
+    },
+    "GPS.GWk": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        2200,
+        2200,
+        2200
+      ]
+    },
+    "GPS.I": {
+      "times": [
+        0.999,
+        1.099,
+        1.199
+      ],
+      "values": [
+        0,
+        1,
+        0
+      ]
+    },
+    "GPS.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "GPS1.Alt": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        42,
+        44
+      ]
+    },
+    "GPS1.GMS": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        129600000,
+        129600200
+      ]
+    },
+    "GPS1.GWk": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        2200,
+        2200
+      ]
+    },
+    "GPS1.I": {
+      "times": [
+        0.999,
+        1.199
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "GPS1.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "GPS2.Alt": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        43
+      ]
+    },
+    "GPS2.GMS": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        129600096
+      ]
+    },
+    "GPS2.GWk": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        2200
+      ]
+    },
+    "GPS2.I": {
+      "times": [
+        1.099
+      ],
+      "values": [
+        1
+      ]
+    },
+    "GPS2.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "MAVC.Cmd": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        16,
+        120
+      ]
+    },
+    "MAVC.Fr": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        3,
+        0
+      ]
+    },
+    "MAVC.P1": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MAVC.P2": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "MAVC.P3": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "MAVC.P4": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "MAVC.Res": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "MAVC.SC": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        190,
+        190
+      ]
+    },
+    "MAVC.SS": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        254,
+        254
+      ]
+    },
+    "MAVC.TC": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    "MAVC.TS": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        255,
+        255
+      ]
+    },
+    "MAVC.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "MAVC.WL": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        0,
+        1
+      ]
+    },
+    "MAVC.X": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        341234560,
+        0
+      ]
+    },
+    "MAVC.Y": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        -1181234560,
+        0
+      ]
+    },
+    "MAVC.Z": {
+      "times": [
+        1.899,
+        1.999
+      ],
+      "values": [
+        100.5,
+        0
+      ]
+    },
+    "MODE.Mode": {
+      "times": [
+        2.099,
+        2.199
+      ],
+      "values": [
+        4,
+        5
+      ]
+    },
+    "MODE.ModeNum": {
+      "times": [
+        2.099,
+        2.199
+      ],
+      "values": [
+        4,
+        5
+      ]
+    },
+    "MODE.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "PARM.Default": {
+      "times": [
+        0,
+        0.001,
+        0.002
+      ],
+      "values": [
+        0.10000000149011612,
+        0.10000000149011612,
+        100
+      ]
+    },
+    "PARM.Name": {
+      "times": [],
+      "values": []
+    },
+    "PARM.TimeUS": {
+      "times": [],
+      "values": []
+    },
+    "PARM.Value": {
+      "times": [
+        0,
+        0.001,
+        0.002
+      ],
+      "values": [
+        0.13500000536441803,
+        0.14499999582767487,
+        300
+      ]
+    }
+  },
+  "signal": [
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "raw",
+        "maxPoints": 12
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "raw",
+        "pts": [
+          [
+            0.499,
+            500
+          ],
+          [
+            2299.999,
+            2300000
+          ],
+          [
+            2399.999,
+            2400000
+          ]
+        ],
+        "res": 799.833,
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "minmax",
+        "stats": {
+          "avg": 1566833.3333333333,
+          "count": 3,
+          "max": 2400000,
+          "maxAt": 2399.999,
+          "min": 500,
+          "minAt": 0.499,
+          "ok": true,
+          "p2p": 2399500,
+          "rms": 1919201.244441725
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "min"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "min",
+        "stats": {
+          "avg": 1566833.3333333333,
+          "count": 3,
+          "max": 2400000,
+          "maxAt": 2399.999,
+          "min": 500,
+          "minAt": 0.499,
+          "ok": true,
+          "p2p": 2399500,
+          "rms": 1919201.244441725
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "stats"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "minmax",
+        "stats": {
+          "avg": 1566833.3333333333,
+          "count": 3,
+          "max": 2400000,
+          "maxAt": 2399.999,
+          "min": 500,
+          "minAt": 0.499,
+          "ok": true,
+          "p2p": 2399500,
+          "rms": 1919201.244441725
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "derivative"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "derivative",
+        "rate": {
+          "avgRate": 1000,
+          "maxRate": 1000,
+          "maxRateAt": 2299.999,
+          "ok": true,
+          "samples": 2
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "trend"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "trend",
+        "trend": {
+          "change": 2399500,
+          "direction": "rising",
+          "duration": 2399.5,
+          "first": 500,
+          "last": 2400000,
+          "ok": true,
+          "slope": 1000.0000000000003
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "peaks"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "peaks",
+        "peaks": {
+          "count": 0,
+          "maxPeak": 2400000,
+          "maxPeakAt": 2399.999,
+          "ok": true,
+          "prominence": 119975
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "TimeMS",
+        "op": "abnormal",
+        "conds": [
+          {
+            "op": "gt",
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "value": -1000000000
+          }
+        ]
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [],
+            "total": 0,
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "segs": [],
+            "total": 0,
+            "value": -1000000000
+          }
+        ],
+        "n": 3,
+        "name": "ATT.TimeMS",
+        "op": "abnormal",
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "Roll",
+        "op": "raw",
+        "maxPoints": 7
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.Roll",
+        "op": "raw",
+        "pts": [
+          [
+            0.499,
+            12.5
+          ],
+          [
+            2299.999,
+            13.5
+          ],
+          [
+            2399.999,
+            14.5
+          ]
+        ],
+        "res": 799.833,
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "Roll",
+        "startSec": -1000000000,
+        "endSec": -100000000,
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATT.Roll",
+        "op": "minmax",
+        "stats": {
+          "avg": 13.5,
+          "count": 3,
+          "max": 14.5,
+          "maxAt": 2399.999,
+          "min": 12.5,
+          "minAt": 0.499,
+          "ok": true,
+          "p2p": 2,
+          "rms": 13.524668819112232
+        },
+        "win": [
+          0.499,
+          2399.999
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "Roll",
+        "op": "bogus"
+      },
+      "resp": {
+        "error": "不支持的 operation: bogus",
+        "name": "ATT.Roll"
+      }
+    },
+    {
+      "req": {
+        "type": "ATT",
+        "field": "NoSuchField",
+        "op": "minmax"
+      },
+      "resp": {
+        "error": "type not found: ATT.NoSuchField",
+        "name": "ATT.NoSuchField",
+        "op": "minmax"
+      }
+    },
+    {
+      "req": {
+        "type": "BAT",
+        "field": "TimeMS",
+        "op": "abnormal",
+        "threshold": 0
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [
+              [
+                0.999,
+                1.199,
+                1200,
+                1200
+              ]
+            ],
+            "total": 0.2,
+            "value": 0
+          }
+        ],
+        "n": 3,
+        "name": "BAT.TimeMS",
+        "op": "abnormal",
+        "win": [
+          0.999,
+          1.199
+        ]
+      }
+    }
+  ],
+  "status": {
+    "loaded": true,
+    "fileName": "wasm-parser\\tests\\fixtures\\apm_text\\apm_text.log"
+  },
+  "summary": {
+    "filename": "wasm-parser\\tests\\fixtures\\apm_text\\apm_text.log",
+    "fileSizeKB": 1.474609375,
+    "vehicleType": "Copter",
+    "firmwareVersion": "V4.5.6",
+    "firmwareHash": "1931a2b1",
+    "hardwareType": "",
+    "freeRAM": 32768,
+    "durationSecs": 0.2,
+    "totalLines": 37,
+    "frame": "QUADROTOR",
+    "airframe": "multirotor",
+    "typeCount": 14,
+    "startUnixSecs": 1646654381,
+    "hasUTC": true,
+    "startTimeMs": 1646654381001,
+    "format": "apm"
+  },
+  "typeSchema": {
+    "ATT": {
+      "fields": [
+        {
+          "name": "TimeMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 500,
+          "max": 2400000,
+          "count": 3
+        },
+        {
+          "name": "Roll",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 12.5,
+          "max": 14.5,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 12,
+      "baseTimeMs": 1646654381500
+    },
+    "BAT": {
+      "fields": [
+        {
+          "name": "TimeMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 1000,
+          "max": 1200,
+          "count": 3
+        },
+        {
+          "name": "Instance",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0,
+          "max": 1,
+          "count": 3
+        },
+        {
+          "name": "Volt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 12.1,
+          "max": 12.3,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 16,
+      "baseTimeMs": 1646654382000
+    },
+    "BAT1": {
+      "fields": [
+        {
+          "name": "TimeMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 1000,
+          "max": 1200,
+          "count": 2
+        },
+        {
+          "name": "Instance",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Volt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 12.1,
+          "max": 12.3,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 16,
+      "baseTimeMs": 1646654382000
+    },
+    "BAT2": {
+      "fields": [
+        {
+          "name": "TimeMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 1100,
+          "max": 1100,
+          "count": 1
+        },
+        {
+          "name": "Instance",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 1,
+          "max": 1,
+          "count": 1
+        },
+        {
+          "name": "Volt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 12.2,
+          "max": 12.2,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 16,
+      "baseTimeMs": 1646654382100
+    },
+    "CMD": {
+      "fields": [
+        {
+          "name": "CTot",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 4,
+          "max": 4,
+          "count": 2
+        },
+        {
+          "name": "CNum",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0,
+          "max": 1,
+          "count": 2
+        },
+        {
+          "name": "CId",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 16,
+          "max": 22,
+          "count": 2
+        },
+        {
+          "name": "Prm1",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Prm2",
+          "glType": 6,
+          "scale": 1,
+          "offset": 20,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Prm3",
+          "glType": 6,
+          "scale": 1,
+          "offset": 24,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Prm4",
+          "glType": 6,
+          "scale": 1,
+          "offset": 28,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Lat",
+          "glType": 6,
+          "scale": 1,
+          "offset": 32,
+          "min": 0,
+          "max": 341234567,
+          "count": 2
+        },
+        {
+          "name": "Lng",
+          "glType": 6,
+          "scale": 1,
+          "offset": 36,
+          "min": -1181234567,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Alt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 40,
+          "min": 25,
+          "max": 100.5,
+          "count": 2
+        },
+        {
+          "name": "Frame",
+          "glType": 6,
+          "scale": 1,
+          "offset": 44,
+          "min": 3,
+          "max": 3,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 48,
+      "baseTimeMs": 1646654382700
+    },
+    "ERR": {
+      "fields": [
+        {
+          "name": "TimeUS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 1300000,
+          "max": 1400000,
+          "count": 2
+        },
+        {
+          "name": "Subsys",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 3,
+          "max": 12,
+          "count": 2
+        },
+        {
+          "name": "ECode",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 5,
+          "max": 17,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 16,
+      "baseTimeMs": 1646654382300
+    },
+    "EV": {
+      "fields": [
+        {
+          "name": "Id",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 7,
+          "max": 42,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 8,
+      "baseTimeMs": 1646654382500
+    },
+    "GPS": {
+      "fields": [
+        {
+          "name": "I",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 1,
+          "count": 3
+        },
+        {
+          "name": "GMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 129600000,
+          "max": 129600200,
+          "count": 3
+        },
+        {
+          "name": "GWk",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 2200,
+          "max": 2200,
+          "count": 3
+        },
+        {
+          "name": "Alt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 42,
+          "max": 44,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 20,
+      "baseTimeMs": 1646654382000
+    },
+    "GPS1": {
+      "fields": [
+        {
+          "name": "I",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "GMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 129600000,
+          "max": 129600200,
+          "count": 2
+        },
+        {
+          "name": "GWk",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 2200,
+          "max": 2200,
+          "count": 2
+        },
+        {
+          "name": "Alt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 42,
+          "max": 44,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 20,
+      "baseTimeMs": 1646654382000
+    },
+    "GPS2": {
+      "fields": [
+        {
+          "name": "I",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 1,
+          "max": 1,
+          "count": 1
+        },
+        {
+          "name": "GMS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 129600100,
+          "max": 129600100,
+          "count": 1
+        },
+        {
+          "name": "GWk",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 2200,
+          "max": 2200,
+          "count": 1
+        },
+        {
+          "name": "Alt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 43,
+          "max": 43,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 20,
+      "baseTimeMs": 1646654382100
+    },
+    "MAVC": {
+      "fields": [
+        {
+          "name": "TS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 255,
+          "max": 255,
+          "count": 2
+        },
+        {
+          "name": "TC",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 1,
+          "max": 1,
+          "count": 2
+        },
+        {
+          "name": "SS",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 254,
+          "max": 254,
+          "count": 2
+        },
+        {
+          "name": "SC",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 190,
+          "max": 190,
+          "count": 2
+        },
+        {
+          "name": "Fr",
+          "glType": 6,
+          "scale": 1,
+          "offset": 20,
+          "min": 0,
+          "max": 3,
+          "count": 2
+        },
+        {
+          "name": "Cmd",
+          "glType": 6,
+          "scale": 1,
+          "offset": 24,
+          "min": 16,
+          "max": 120,
+          "count": 2
+        },
+        {
+          "name": "P1",
+          "glType": 6,
+          "scale": 1,
+          "offset": 28,
+          "min": 0,
+          "max": 1,
+          "count": 2
+        },
+        {
+          "name": "P2",
+          "glType": 6,
+          "scale": 1,
+          "offset": 32,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "P3",
+          "glType": 6,
+          "scale": 1,
+          "offset": 36,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "P4",
+          "glType": 6,
+          "scale": 1,
+          "offset": 40,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "X",
+          "glType": 6,
+          "scale": 1,
+          "offset": 44,
+          "min": 0,
+          "max": 341234567,
+          "count": 2
+        },
+        {
+          "name": "Y",
+          "glType": 6,
+          "scale": 1,
+          "offset": 48,
+          "min": -1181234567,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Z",
+          "glType": 6,
+          "scale": 1,
+          "offset": 52,
+          "min": 0,
+          "max": 100.5,
+          "count": 2
+        },
+        {
+          "name": "Res",
+          "glType": 6,
+          "scale": 1,
+          "offset": 56,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "WL",
+          "glType": 6,
+          "scale": 1,
+          "offset": 60,
+          "min": 0,
+          "max": 1,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 64,
+      "baseTimeMs": 1646654382900
+    },
+    "MODE": {
+      "fields": [
+        {
+          "name": "Mode",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 4,
+          "max": 5,
+          "count": 2
+        },
+        {
+          "name": "ModeNum",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 4,
+          "max": 5,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 12,
+      "baseTimeMs": 1646654383100
+    },
+    "PARM": {
+      "fields": [
+        {
+          "name": "Value",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 0.135,
+          "max": 300,
+          "count": 3
+        },
+        {
+          "name": "Default",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0.1,
+          "max": 100,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 12,
+      "baseTimeMs": 1646654381001
+    }
+  }
+}

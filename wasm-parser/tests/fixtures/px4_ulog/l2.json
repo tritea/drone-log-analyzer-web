@@ -1,0 +1,1396 @@
+{
+  "commands": [
+    {
+      "timeMs": 1700000004000,
+      "commandTotal": 0,
+      "sequence": 0,
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 47.29999923706055,
+      "longitude": 8.5,
+      "altitude": 500,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT"
+    },
+    {
+      "timeMs": 1700000005000,
+      "commandTotal": 0,
+      "sequence": 1,
+      "command": 22,
+      "commandName": "NAV_TAKEOFF",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 11.100000381469727,
+      "longitude": 11.100000381469727,
+      "altitude": 111,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT"
+    },
+    {
+      "timeMs": 1700000007000,
+      "commandTotal": 0,
+      "sequence": 0,
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 99.9000015258789,
+      "longitude": 99.9000015258789,
+      "altitude": 999,
+      "frame": 3,
+      "frameName": "GLOBAL_RELATIVE_ALT"
+    }
+  ],
+  "errors": [],
+  "events": [
+    {
+      "lineno": 19,
+      "timeMs": 1700000001500,
+      "id": 42,
+      "name": "Armed"
+    },
+    {
+      "lineno": 20,
+      "timeMs": 1700000002500,
+      "id": 7,
+      "name": "Disarmed"
+    },
+    {
+      "lineno": 21,
+      "timeMs": 1700000003500,
+      "id": 999,
+      "name": ""
+    }
+  ],
+  "fields": {
+    "event": [
+      {
+        "name": "timestamp",
+        "type": "uint64_t",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "id",
+        "type": "uint32_t",
+        "min": 7,
+        "max": 999,
+        "count": 3,
+        "isNumeric": true
+      }
+    ],
+    "navigator_mission_item": [
+      {
+        "name": "timestamp",
+        "type": "uint64_t",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "sequence_current",
+        "type": "uint16_t",
+        "min": 0,
+        "max": 1,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "nav_cmd",
+        "type": "uint16_t",
+        "min": 16,
+        "max": 22,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "latitude",
+        "type": "float",
+        "min": 11.100000381469727,
+        "max": 99.9000015258789,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "longitude",
+        "type": "float",
+        "min": 8.5,
+        "max": 99.9000015258789,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "altitude",
+        "type": "float",
+        "min": 111,
+        "max": 999,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "frame",
+        "type": "uint8_t",
+        "min": 3,
+        "max": 3,
+        "count": 4,
+        "isNumeric": true
+      }
+    ],
+    "vehicle_attitude": [
+      {
+        "name": "timestamp",
+        "type": "uint64_t",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "roll",
+        "type": "float",
+        "min": 0.10000000149011612,
+        "max": 0.25,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "pitch",
+        "type": "float",
+        "min": 0.019999999552965164,
+        "max": 0.03500000014901161,
+        "count": 4,
+        "isNumeric": true
+      },
+      {
+        "name": "yaw",
+        "type": "float",
+        "min": -0.44999998807907104,
+        "max": -0.30000001192092896,
+        "count": 4,
+        "isNumeric": true
+      }
+    ],
+    "vehicle_command": [
+      {
+        "name": "timestamp",
+        "type": "uint64_t",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "param1",
+        "type": "float",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param2",
+        "type": "float",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param3",
+        "type": "float",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param4",
+        "type": "float",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param5",
+        "type": "double",
+        "min": 47.3,
+        "max": 47.3,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param6",
+        "type": "double",
+        "min": 8.5,
+        "max": 8.5,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "param7",
+        "type": "float",
+        "min": 100,
+        "max": 100,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "command",
+        "type": "uint32_t",
+        "min": 16,
+        "max": 16,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "target_system",
+        "type": "uint8_t",
+        "min": 1,
+        "max": 1,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "target_component",
+        "type": "uint8_t",
+        "min": 1,
+        "max": 1,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "source_system",
+        "type": "uint8_t",
+        "min": 255,
+        "max": 255,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "source_component",
+        "type": "uint16_t",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      }
+    ],
+    "vehicle_command_ack": [
+      {
+        "name": "timestamp",
+        "type": "uint64_t",
+        "min": 0,
+        "max": 0,
+        "count": 0,
+        "isNumeric": false
+      },
+      {
+        "name": "command",
+        "type": "uint32_t",
+        "min": 16,
+        "max": 99,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "result",
+        "type": "uint8_t",
+        "min": 0,
+        "max": 2,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "result_param1",
+        "type": "uint8_t",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "result_param2",
+        "type": "int32_t",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "target_system",
+        "type": "uint8_t",
+        "min": 1,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "target_component",
+        "type": "uint16_t",
+        "min": 1,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "from_external",
+        "type": "bool",
+        "min": 1,
+        "max": 1,
+        "count": 2,
+        "isNumeric": true
+      }
+    ]
+  },
+  "logDefs": {
+    "format": "ulog",
+    "navStateNames": {
+      "0": "MANUAL",
+      "1": "ALTCTL",
+      "10": "RATTITUDE",
+      "11": "AUTO_TAKEOFF",
+      "12": "AUTO_LAND",
+      "13": "AUTO_FOLLOW_TARGET",
+      "14": "AUTO_PRECLAND",
+      "15": "ORBIT",
+      "16": "AUTO_VTOL_TAKEOFF",
+      "17": "AUTO_VTOL_LAND",
+      "2": "POSCTL",
+      "3": "AUTO_MISSION",
+      "4": "AUTO_LOITER",
+      "5": "AUTO_RTL",
+      "6": "POSITION",
+      "7": "ACRO",
+      "8": "OFFBOARD",
+      "9": "STABILIZED"
+    },
+    "units": {}
+  },
+  "mavlinkCommands": [
+    {
+      "timeMs": 1700000008000,
+      "targetSystem": 1,
+      "targetComponent": 1,
+      "sourceSystem": 255,
+      "sourceComponent": 0,
+      "frame": 0,
+      "frameName": "GLOBAL",
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 47.3,
+      "longitude": 8.5,
+      "altitude": 100,
+      "result": 0,
+      "resultName": "ACCEPTED",
+      "wasCommandLong": false
+    }
+  ],
+  "messageTypes": [
+    {
+      "name": "event",
+      "fields": [
+        "id"
+      ],
+      "count": 3,
+      "hasData": false
+    },
+    {
+      "name": "navigator_mission_item",
+      "fields": [
+        "sequence_current",
+        "nav_cmd",
+        "latitude",
+        "longitude",
+        "altitude",
+        "frame"
+      ],
+      "count": 4,
+      "hasData": false
+    },
+    {
+      "name": "vehicle_attitude",
+      "fields": [
+        "roll",
+        "pitch",
+        "yaw"
+      ],
+      "count": 4,
+      "hasData": false
+    },
+    {
+      "name": "vehicle_command",
+      "fields": [
+        "param1",
+        "param2",
+        "param3",
+        "param4",
+        "param5",
+        "param6",
+        "param7",
+        "command",
+        "target_system",
+        "target_component",
+        "source_system",
+        "source_component"
+      ],
+      "count": 1,
+      "hasData": false
+    },
+    {
+      "name": "vehicle_command_ack",
+      "fields": [
+        "command",
+        "result",
+        "result_param1",
+        "result_param2",
+        "target_system",
+        "target_component",
+        "from_external"
+      ],
+      "count": 2,
+      "hasData": false
+    }
+  ],
+  "messages": [
+    {
+      "lineno": 31,
+      "timeMs": 1700000000500,
+      "message": "armed"
+    },
+    {
+      "lineno": 32,
+      "timeMs": 1700000003600,
+      "message": "landing detected"
+    }
+  ],
+  "modeChanges": [],
+  "parameters": [
+    {
+      "name": "PARAM_X",
+      "value": 42
+    },
+    {
+      "name": "PARAM_Y",
+      "value": -1.5
+    }
+  ],
+  "series": {
+    "event.id": {
+      "times": [
+        1,
+        2,
+        3
+      ],
+      "values": [
+        42,
+        7,
+        999
+      ]
+    },
+    "event.timestamp": {
+      "times": [],
+      "values": []
+    },
+    "navigator_mission_item.altitude": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        500,
+        111,
+        111,
+        999
+      ]
+    },
+    "navigator_mission_item.frame": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "navigator_mission_item.latitude": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        47.29999923706055,
+        11.100000381469727,
+        11.100000381469727,
+        99.9000015258789
+      ]
+    },
+    "navigator_mission_item.longitude": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        8.5,
+        11.100000381469727,
+        11.100000381469727,
+        99.9000015258789
+      ]
+    },
+    "navigator_mission_item.nav_cmd": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        16,
+        22,
+        22,
+        16
+      ]
+    },
+    "navigator_mission_item.sequence_current": {
+      "times": [
+        3.5,
+        4.5,
+        5.5,
+        6.5
+      ],
+      "values": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    "navigator_mission_item.timestamp": {
+      "times": [],
+      "values": []
+    },
+    "vehicle_attitude.pitch": {
+      "times": [
+        0,
+        0.5,
+        1.5,
+        2.5
+      ],
+      "values": [
+        0.019999999552965164,
+        0.02500000037252903,
+        0.029999999329447746,
+        0.03500000014901161
+      ]
+    },
+    "vehicle_attitude.roll": {
+      "times": [
+        0,
+        0.5,
+        1.5,
+        2.5
+      ],
+      "values": [
+        0.10000000149011612,
+        0.15000000596046448,
+        0.20000000298023224,
+        0.25
+      ]
+    },
+    "vehicle_attitude.timestamp": {
+      "times": [],
+      "values": []
+    },
+    "vehicle_attitude.yaw": {
+      "times": [
+        0,
+        0.5,
+        1.5,
+        2.5
+      ],
+      "values": [
+        -0.30000001192092896,
+        -0.3499999940395355,
+        -0.4000000059604645,
+        -0.44999998807907104
+      ]
+    },
+    "vehicle_command.command": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        16
+      ]
+    },
+    "vehicle_command.param1": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        0
+      ]
+    },
+    "vehicle_command.param2": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        0
+      ]
+    },
+    "vehicle_command.param3": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        0
+      ]
+    },
+    "vehicle_command.param4": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        0
+      ]
+    },
+    "vehicle_command.param5": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        47.29999923706055
+      ]
+    },
+    "vehicle_command.param6": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        8.5
+      ]
+    },
+    "vehicle_command.param7": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        100
+      ]
+    },
+    "vehicle_command.source_component": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        0
+      ]
+    },
+    "vehicle_command.source_system": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        255
+      ]
+    },
+    "vehicle_command.target_component": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        1
+      ]
+    },
+    "vehicle_command.target_system": {
+      "times": [
+        7.5
+      ],
+      "values": [
+        1
+      ]
+    },
+    "vehicle_command.timestamp": {
+      "times": [],
+      "values": []
+    },
+    "vehicle_command_ack.command": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        16,
+        99
+      ]
+    },
+    "vehicle_command_ack.from_external": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    "vehicle_command_ack.result": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        0,
+        2
+      ]
+    },
+    "vehicle_command_ack.result_param1": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "vehicle_command_ack.result_param2": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "vehicle_command_ack.target_component": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    "vehicle_command_ack.target_system": {
+      "times": [
+        7.6,
+        7.7
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    "vehicle_command_ack.timestamp": {
+      "times": [],
+      "values": []
+    }
+  },
+  "signal": [
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "raw",
+        "maxPoints": 12
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "raw",
+        "pts": null
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "minmax",
+        "stats": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "min"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "min",
+        "stats": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "stats"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "minmax",
+        "stats": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "derivative"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "derivative",
+        "rate": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "trend"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "trend",
+        "trend": {
+          "change": 0,
+          "direction": "",
+          "duration": 0,
+          "first": 0,
+          "last": 0,
+          "ok": false,
+          "slope": 0
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "peaks"
+      },
+      "resp": {
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "peaks",
+        "peaks": {
+          "count": 0,
+          "maxPeak": 0,
+          "maxPeakAt": 0,
+          "ok": false,
+          "prominence": 0
+        }
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "timestamp",
+        "op": "abnormal",
+        "conds": [
+          {
+            "op": "gt",
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "value": -1000000000
+          }
+        ]
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [],
+            "total": 0,
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "segs": [],
+            "total": 0,
+            "value": -1000000000
+          }
+        ],
+        "n": 0,
+        "name": "event.timestamp",
+        "op": "abnormal"
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "id",
+        "op": "raw",
+        "maxPoints": 7
+      },
+      "resp": {
+        "n": 3,
+        "name": "event.id",
+        "op": "raw",
+        "pts": [
+          [
+            1,
+            42
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            999
+          ]
+        ],
+        "res": 0.667,
+        "win": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "id",
+        "startSec": -1000000000,
+        "endSec": -100000000,
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 3,
+        "name": "event.id",
+        "op": "minmax",
+        "stats": {
+          "avg": 349.3333333333333,
+          "count": 3,
+          "max": 999,
+          "maxAt": 3,
+          "min": 7,
+          "minAt": 2,
+          "ok": true,
+          "p2p": 992,
+          "rms": 577.2965731176076
+        },
+        "win": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "id",
+        "op": "bogus"
+      },
+      "resp": {
+        "error": "不支持的 operation: bogus",
+        "name": "event.id"
+      }
+    },
+    {
+      "req": {
+        "type": "event",
+        "field": "NoSuchField",
+        "op": "minmax"
+      },
+      "resp": {
+        "error": "type not found: event.NoSuchField",
+        "name": "event.NoSuchField",
+        "op": "minmax"
+      }
+    },
+    {
+      "req": {
+        "type": "navigator_mission_item",
+        "field": "timestamp",
+        "op": "abnormal",
+        "threshold": 0
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [],
+            "total": 0,
+            "value": 0
+          }
+        ],
+        "n": 0,
+        "name": "navigator_mission_item.timestamp",
+        "op": "abnormal"
+      }
+    }
+  ],
+  "status": {
+    "loaded": true,
+    "fileName": "wasm-parser\\tests\\fixtures\\px4_ulog\\px4_ulog.ulg"
+  },
+  "summary": {
+    "filename": "wasm-parser\\tests\\fixtures\\px4_ulog\\px4_ulog.ulg",
+    "fileSizeKB": 1.505859375,
+    "vehicleType": "",
+    "firmwareVersion": "",
+    "firmwareHash": "",
+    "hardwareType": "",
+    "freeRAM": 0,
+    "durationSecs": 8.2,
+    "totalLines": 0,
+    "frame": "QUADROTOR",
+    "airframe": "multirotor",
+    "typeCount": 6,
+    "startUnixSecs": 1699999999,
+    "hasUTC": true,
+    "startTimeMs": 1700000000500,
+    "format": "ulog"
+  },
+  "typeSchema": {
+    "event": {
+      "fields": [
+        {
+          "name": "id",
+          "glType": 5,
+          "scale": 1,
+          "offset": 4,
+          "min": 7,
+          "max": 999,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 8,
+      "baseTimeMs": 1700000001500
+    },
+    "navigator_mission_item": {
+      "fields": [
+        {
+          "name": "sequence_current",
+          "glType": 3,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 1,
+          "count": 4
+        },
+        {
+          "name": "nav_cmd",
+          "glType": 3,
+          "scale": 1,
+          "offset": 6,
+          "min": 16,
+          "max": 22,
+          "count": 4
+        },
+        {
+          "name": "latitude",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 11.100000381469727,
+          "max": 99.9000015258789,
+          "count": 4
+        },
+        {
+          "name": "longitude",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 8.5,
+          "max": 99.9000015258789,
+          "count": 4
+        },
+        {
+          "name": "altitude",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 111,
+          "max": 999,
+          "count": 4
+        },
+        {
+          "name": "frame",
+          "glType": 1,
+          "scale": 1,
+          "offset": 20,
+          "min": 3,
+          "max": 3,
+          "count": 4
+        }
+      ],
+      "rowCount": 4,
+      "stride": 24,
+      "baseTimeMs": 1700000004000
+    },
+    "vehicle_attitude": {
+      "fields": [
+        {
+          "name": "roll",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 0.10000000149011612,
+          "max": 0.25,
+          "count": 4
+        },
+        {
+          "name": "pitch",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0.019999999552965164,
+          "max": 0.03500000014901161,
+          "count": 4
+        },
+        {
+          "name": "yaw",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": -0.44999998807907104,
+          "max": -0.30000001192092896,
+          "count": 4
+        }
+      ],
+      "rowCount": 4,
+      "stride": 16,
+      "baseTimeMs": 1700000000500
+    },
+    "vehicle_command": {
+      "fields": [
+        {
+          "name": "param1",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "param2",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "param3",
+          "glType": 6,
+          "scale": 1,
+          "offset": 12,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "param4",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "param5",
+          "glType": 6,
+          "scale": 1,
+          "offset": 20,
+          "min": 47.3,
+          "max": 47.3,
+          "count": 1
+        },
+        {
+          "name": "param6",
+          "glType": 6,
+          "scale": 1,
+          "offset": 24,
+          "min": 8.5,
+          "max": 8.5,
+          "count": 1
+        },
+        {
+          "name": "param7",
+          "glType": 6,
+          "scale": 1,
+          "offset": 28,
+          "min": 100,
+          "max": 100,
+          "count": 1
+        },
+        {
+          "name": "command",
+          "glType": 5,
+          "scale": 1,
+          "offset": 32,
+          "min": 16,
+          "max": 16,
+          "count": 1
+        },
+        {
+          "name": "target_system",
+          "glType": 1,
+          "scale": 1,
+          "offset": 36,
+          "min": 1,
+          "max": 1,
+          "count": 1
+        },
+        {
+          "name": "target_component",
+          "glType": 1,
+          "scale": 1,
+          "offset": 37,
+          "min": 1,
+          "max": 1,
+          "count": 1
+        },
+        {
+          "name": "source_system",
+          "glType": 1,
+          "scale": 1,
+          "offset": 38,
+          "min": 255,
+          "max": 255,
+          "count": 1
+        },
+        {
+          "name": "source_component",
+          "glType": 3,
+          "scale": 1,
+          "offset": 40,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 44,
+      "baseTimeMs": 1700000008000
+    },
+    "vehicle_command_ack": {
+      "fields": [
+        {
+          "name": "command",
+          "glType": 5,
+          "scale": 1,
+          "offset": 4,
+          "min": 16,
+          "max": 99,
+          "count": 2
+        },
+        {
+          "name": "result",
+          "glType": 1,
+          "scale": 1,
+          "offset": 8,
+          "min": 0,
+          "max": 2,
+          "count": 2
+        },
+        {
+          "name": "result_param1",
+          "glType": 1,
+          "scale": 1,
+          "offset": 9,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "result_param2",
+          "glType": 4,
+          "scale": 1,
+          "offset": 12,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "target_system",
+          "glType": 1,
+          "scale": 1,
+          "offset": 16,
+          "min": 1,
+          "max": 1,
+          "count": 2
+        },
+        {
+          "name": "target_component",
+          "glType": 3,
+          "scale": 1,
+          "offset": 18,
+          "min": 1,
+          "max": 1,
+          "count": 2
+        },
+        {
+          "name": "from_external",
+          "glType": 1,
+          "scale": 1,
+          "offset": 20,
+          "min": 1,
+          "max": 1,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 24,
+      "baseTimeMs": 1700000008100
+    }
+  }
+}

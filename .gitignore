@@ -1,0 +1,15 @@
+node_modules/
+*.exe
+dist/
+dist/frontend/
+frontend/dist/
+build/bin/
+bin/
+.tmp/
+rsrc_windows_*.syso
+.claude/
+
+# wasm-parser (Rust crate): build artifacts and local-only fixtures
+wasm-parser/target/
+frontend/src/wasm/parser/
+wasm-parser/tests/fixtures/local/

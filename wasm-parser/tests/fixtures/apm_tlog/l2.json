@@ -1,0 +1,2576 @@
+{
+  "commands": [
+    {
+      "timeMs": 1704067200060,
+      "commandTotal": 0,
+      "sequence": 0,
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 37,
+      "longitude": -122,
+      "altitude": 10,
+      "frame": 0,
+      "frameName": "GLOBAL"
+    },
+    {
+      "timeMs": 1704067200065,
+      "commandTotal": 0,
+      "sequence": 1,
+      "command": 22,
+      "commandName": "NAV_TAKEOFF",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "altitude": 25,
+      "frame": 0,
+      "frameName": "GLOBAL"
+    }
+  ],
+  "errors": [],
+  "events": [],
+  "fields": {
+    "ATTITUDE": [
+      {
+        "name": "TimeBootMs",
+        "type": "uint32",
+        "min": 0,
+        "max": 200,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Roll",
+        "type": "float",
+        "min": 5.729578036685597,
+        "max": 11.459156073371194,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Pitch",
+        "type": "float",
+        "min": 11.459156073371194,
+        "max": 17.188734536943613,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Yaw",
+        "type": "float",
+        "min": 17.188734536943613,
+        "max": 22.918312146742387,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Rollspeed",
+        "type": "float",
+        "min": 0.5729577823242186,
+        "max": 0.5729577823242186,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Pitchspeed",
+        "type": "float",
+        "min": 1.1459155646484371,
+        "max": 1.1459155646484371,
+        "count": 3,
+        "isNumeric": true
+      },
+      {
+        "name": "Yawspeed",
+        "type": "float",
+        "min": 1.7188733469726556,
+        "max": 1.7188733469726556,
+        "count": 3,
+        "isNumeric": true
+      }
+    ],
+    "BATTERY_STATUS": [
+      {
+        "name": "Id",
+        "type": "uint8",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Temperature",
+        "type": "int16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[0]",
+        "type": "uint16",
+        "min": 12000,
+        "max": 12000,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[1]",
+        "type": "uint16",
+        "min": 12010,
+        "max": 12010,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[2]",
+        "type": "uint16",
+        "min": 12020,
+        "max": 12020,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[3]",
+        "type": "uint16",
+        "min": 12030,
+        "max": 12030,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[4]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[5]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[6]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[7]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[8]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Voltages[9]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "CurrentBattery",
+        "type": "int16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "CurrentConsumed",
+        "type": "int32",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "EnergyConsumed",
+        "type": "int32",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "BatteryRemaining",
+        "type": "int8",
+        "min": 90,
+        "max": 90,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "TimeRemaining",
+        "type": "int32",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "VoltagesExt[0]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "VoltagesExt[1]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "VoltagesExt[2]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "VoltagesExt[3]",
+        "type": "uint16",
+        "min": 65535,
+        "max": 65535,
+        "count": 1,
+        "isNumeric": true
+      }
+    ],
+    "GLOBAL_POSITION_INT": [
+      {
+        "name": "TimeBootMs",
+        "type": "uint32",
+        "min": 50,
+        "max": 150,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Lat",
+        "type": "int32",
+        "min": 37,
+        "max": 37.000099999999996,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Lon",
+        "type": "int32",
+        "min": -122,
+        "max": -121.9999,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "int32",
+        "min": 10,
+        "max": 10.1,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "RelativeAlt",
+        "type": "int32",
+        "min": 5,
+        "max": 5.1000000000000005,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Vx",
+        "type": "int16",
+        "min": 0.1,
+        "max": 0.12,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Vy",
+        "type": "int16",
+        "min": -0.05,
+        "max": -0.04,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Vz",
+        "type": "int16",
+        "min": 0,
+        "max": 0.01,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Hdg",
+        "type": "uint16",
+        "min": 27000,
+        "max": 27100,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "RC_CHANNELS": [
+      {
+        "name": "TimeBootMs",
+        "type": "uint32",
+        "min": 95,
+        "max": 105,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chancount",
+        "type": "uint8",
+        "min": 8,
+        "max": 8,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan1Raw",
+        "type": "uint16",
+        "min": 1500,
+        "max": 1520,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan2Raw",
+        "type": "uint16",
+        "min": 1510,
+        "max": 1530,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan3Raw",
+        "type": "uint16",
+        "min": 1600,
+        "max": 1650,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan4Raw",
+        "type": "uint16",
+        "min": 1470,
+        "max": 1490,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan5Raw",
+        "type": "uint16",
+        "min": 1000,
+        "max": 1000,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan6Raw",
+        "type": "uint16",
+        "min": 2000,
+        "max": 2000,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan7Raw",
+        "type": "uint16",
+        "min": 1000,
+        "max": 1000,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan8Raw",
+        "type": "uint16",
+        "min": 1000,
+        "max": 1000,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan9Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan10Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan11Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan12Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan13Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan14Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan15Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan16Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan17Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Chan18Raw",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 2,
+        "isNumeric": true
+      },
+      {
+        "name": "Rssi",
+        "type": "uint8",
+        "min": 253,
+        "max": 253,
+        "count": 2,
+        "isNumeric": true
+      }
+    ],
+    "SYS_STATUS": [
+      {
+        "name": "Load",
+        "type": "uint16",
+        "min": 300,
+        "max": 300,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "VoltageBattery",
+        "type": "uint16",
+        "min": 12000,
+        "max": 12000,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "CurrentBattery",
+        "type": "int16",
+        "min": 1,
+        "max": 1,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "BatteryRemaining",
+        "type": "int8",
+        "min": 90,
+        "max": 90,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "DropRateComm",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "ErrorsComm",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "ErrorsCount1",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "ErrorsCount2",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "ErrorsCount3",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "ErrorsCount4",
+        "type": "uint16",
+        "min": 0,
+        "max": 0,
+        "count": 1,
+        "isNumeric": true
+      }
+    ],
+    "VFR_HUD": [
+      {
+        "name": "Airspeed",
+        "type": "float",
+        "min": 5,
+        "max": 5,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Groundspeed",
+        "type": "float",
+        "min": 6,
+        "max": 6,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Heading",
+        "type": "int16",
+        "min": 270,
+        "max": 270,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Throttle",
+        "type": "uint16",
+        "min": 40,
+        "max": 40,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Alt",
+        "type": "float",
+        "min": 51,
+        "max": 51,
+        "count": 1,
+        "isNumeric": true
+      },
+      {
+        "name": "Climb",
+        "type": "float",
+        "min": 0.5,
+        "max": 0.5,
+        "count": 1,
+        "isNumeric": true
+      }
+    ]
+  },
+  "logDefs": {
+    "format": "tlog",
+    "units": {}
+  },
+  "mavlinkCommands": [
+    {
+      "timeMs": 1704067200070,
+      "targetSystem": 1,
+      "targetComponent": 1,
+      "sourceSystem": 1,
+      "sourceComponent": 1,
+      "frame": 0,
+      "frameName": "GLOBAL",
+      "command": 16,
+      "commandName": "NAV_WAYPOINT",
+      "param1": 0,
+      "param2": 0,
+      "param3": 0,
+      "param4": 0,
+      "latitude": 47.29999923706055,
+      "longitude": 8.5,
+      "altitude": 100,
+      "result": 2,
+      "resultName": "DENIED",
+      "wasCommandLong": true
+    }
+  ],
+  "messageTypes": [
+    {
+      "name": "ATTITUDE",
+      "fields": [
+        "TimeBootMs",
+        "Roll",
+        "Pitch",
+        "Yaw",
+        "Rollspeed",
+        "Pitchspeed",
+        "Yawspeed"
+      ],
+      "count": 3,
+      "hasData": false
+    },
+    {
+      "name": "BATTERY_STATUS",
+      "fields": [
+        "Id",
+        "Temperature",
+        "Voltages[0]",
+        "Voltages[1]",
+        "Voltages[2]",
+        "Voltages[3]",
+        "Voltages[4]",
+        "Voltages[5]",
+        "Voltages[6]",
+        "Voltages[7]",
+        "Voltages[8]",
+        "Voltages[9]",
+        "CurrentBattery",
+        "CurrentConsumed",
+        "EnergyConsumed",
+        "BatteryRemaining",
+        "TimeRemaining",
+        "VoltagesExt[0]",
+        "VoltagesExt[1]",
+        "VoltagesExt[2]",
+        "VoltagesExt[3]"
+      ],
+      "count": 1,
+      "hasData": false
+    },
+    {
+      "name": "GLOBAL_POSITION_INT",
+      "fields": [
+        "TimeBootMs",
+        "Lat",
+        "Lon",
+        "Alt",
+        "RelativeAlt",
+        "Vx",
+        "Vy",
+        "Vz",
+        "Hdg"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "RC_CHANNELS",
+      "fields": [
+        "TimeBootMs",
+        "Chancount",
+        "Chan1Raw",
+        "Chan2Raw",
+        "Chan3Raw",
+        "Chan4Raw",
+        "Chan5Raw",
+        "Chan6Raw",
+        "Chan7Raw",
+        "Chan8Raw",
+        "Chan9Raw",
+        "Chan10Raw",
+        "Chan11Raw",
+        "Chan12Raw",
+        "Chan13Raw",
+        "Chan14Raw",
+        "Chan15Raw",
+        "Chan16Raw",
+        "Chan17Raw",
+        "Chan18Raw",
+        "Rssi"
+      ],
+      "count": 2,
+      "hasData": false
+    },
+    {
+      "name": "SYS_STATUS",
+      "fields": [
+        "Load",
+        "VoltageBattery",
+        "CurrentBattery",
+        "BatteryRemaining",
+        "DropRateComm",
+        "ErrorsComm",
+        "ErrorsCount1",
+        "ErrorsCount2",
+        "ErrorsCount3",
+        "ErrorsCount4"
+      ],
+      "count": 1,
+      "hasData": false
+    },
+    {
+      "name": "VFR_HUD",
+      "fields": [
+        "Airspeed",
+        "Groundspeed",
+        "Heading",
+        "Throttle",
+        "Alt",
+        "Climb"
+      ],
+      "count": 1,
+      "hasData": false
+    }
+  ],
+  "messages": [
+    {
+      "lineno": 7,
+      "timeMs": 1704067200030,
+      "message": "test message"
+    }
+  ],
+  "modeChanges": [
+    {
+      "lineno": 20,
+      "timeMs": 1704067200300,
+      "mode": "GUIDED",
+      "modeNum": 4
+    },
+    {
+      "lineno": 21,
+      "timeMs": 1704067200400,
+      "mode": "LOITER",
+      "modeNum": 5
+    }
+  ],
+  "parameters": [
+    {
+      "name": "ANGLE_MAX",
+      "value": 5.5
+    },
+    {
+      "name": "WPNAV_SPEED",
+      "value": 300
+    }
+  ],
+  "series": {
+    "ATTITUDE.Pitch": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        11.459156073371194,
+        14.32394487827058,
+        17.188734536943613
+      ]
+    },
+    "ATTITUDE.Pitchspeed": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        1.1459155646484371,
+        1.1459155646484371,
+        1.1459155646484371
+      ]
+    },
+    "ATTITUDE.Roll": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        5.729578036685597,
+        8.594367268471807,
+        11.459156073371194
+      ]
+    },
+    "ATTITUDE.Rollspeed": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        0.5729577823242186,
+        0.5729577823242186,
+        0.5729577823242186
+      ]
+    },
+    "ATTITUDE.TimeBootMs": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        0,
+        100,
+        200
+      ]
+    },
+    "ATTITUDE.Yaw": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        17.188734536943613,
+        20.053522488069355,
+        22.918312146742387
+      ]
+    },
+    "ATTITUDE.Yawspeed": {
+      "times": [
+        0,
+        0.1,
+        0.2
+      ],
+      "values": [
+        1.7188733469726556,
+        1.7188733469726556,
+        1.7188733469726556
+      ]
+    },
+    "BATTERY_STATUS.BatteryRemaining": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        90
+      ]
+    },
+    "BATTERY_STATUS.CurrentBattery": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.CurrentConsumed": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.EnergyConsumed": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.Id": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.Temperature": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.TimeRemaining": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        0
+      ]
+    },
+    "BATTERY_STATUS.VoltagesExt[0]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.VoltagesExt[1]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.VoltagesExt[2]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.VoltagesExt[3]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[0]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        12000
+      ]
+    },
+    "BATTERY_STATUS.Voltages[1]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        12010
+      ]
+    },
+    "BATTERY_STATUS.Voltages[2]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        12020
+      ]
+    },
+    "BATTERY_STATUS.Voltages[3]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        12030
+      ]
+    },
+    "BATTERY_STATUS.Voltages[4]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[5]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[6]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[7]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[8]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "BATTERY_STATUS.Voltages[9]": {
+      "times": [
+        0.09
+      ],
+      "values": [
+        65535
+      ]
+    },
+    "GLOBAL_POSITION_INT.Alt": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        10,
+        10.1
+      ]
+    },
+    "GLOBAL_POSITION_INT.Hdg": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        27000,
+        27100
+      ]
+    },
+    "GLOBAL_POSITION_INT.Lat": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        37,
+        37.000099999999996
+      ]
+    },
+    "GLOBAL_POSITION_INT.Lon": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        -122,
+        -121.9999
+      ]
+    },
+    "GLOBAL_POSITION_INT.RelativeAlt": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        5,
+        5.1000000000000005
+      ]
+    },
+    "GLOBAL_POSITION_INT.TimeBootMs": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        50,
+        150
+      ]
+    },
+    "GLOBAL_POSITION_INT.Vx": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        0.1,
+        0.12
+      ]
+    },
+    "GLOBAL_POSITION_INT.Vy": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        -0.05,
+        -0.04
+      ]
+    },
+    "GLOBAL_POSITION_INT.Vz": {
+      "times": [
+        0.05,
+        0.15
+      ],
+      "values": [
+        0,
+        0.01
+      ]
+    },
+    "RC_CHANNELS.Chan10Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan11Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan12Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan13Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan14Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan15Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan16Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan17Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan18Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chan1Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1500,
+        1520
+      ]
+    },
+    "RC_CHANNELS.Chan2Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1510,
+        1530
+      ]
+    },
+    "RC_CHANNELS.Chan3Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1600,
+        1650
+      ]
+    },
+    "RC_CHANNELS.Chan4Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1490,
+        1470
+      ]
+    },
+    "RC_CHANNELS.Chan5Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1000,
+        1000
+      ]
+    },
+    "RC_CHANNELS.Chan6Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        2000,
+        2000
+      ]
+    },
+    "RC_CHANNELS.Chan7Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1000,
+        1000
+      ]
+    },
+    "RC_CHANNELS.Chan8Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        1000,
+        1000
+      ]
+    },
+    "RC_CHANNELS.Chan9Raw": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        0,
+        0
+      ]
+    },
+    "RC_CHANNELS.Chancount": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        8,
+        8
+      ]
+    },
+    "RC_CHANNELS.Rssi": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        253,
+        253
+      ]
+    },
+    "RC_CHANNELS.TimeBootMs": {
+      "times": [
+        0.095,
+        0.105
+      ],
+      "values": [
+        95,
+        105
+      ]
+    },
+    "SYS_STATUS.BatteryRemaining": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        90
+      ]
+    },
+    "SYS_STATUS.CurrentBattery": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        1
+      ]
+    },
+    "SYS_STATUS.DropRateComm": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.ErrorsComm": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.ErrorsCount1": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.ErrorsCount2": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.ErrorsCount3": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.ErrorsCount4": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        0
+      ]
+    },
+    "SYS_STATUS.Load": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        300
+      ]
+    },
+    "SYS_STATUS.VoltageBattery": {
+      "times": [
+        0.12
+      ],
+      "values": [
+        12000
+      ]
+    },
+    "VFR_HUD.Airspeed": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        5
+      ]
+    },
+    "VFR_HUD.Alt": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        51
+      ]
+    },
+    "VFR_HUD.Climb": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        0.5
+      ]
+    },
+    "VFR_HUD.Groundspeed": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        6
+      ]
+    },
+    "VFR_HUD.Heading": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        270
+      ]
+    },
+    "VFR_HUD.Throttle": {
+      "times": [
+        0.11
+      ],
+      "values": [
+        40
+      ]
+    }
+  },
+  "signal": [
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "raw",
+        "maxPoints": 12
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "raw",
+        "pts": [
+          [
+            0,
+            0
+          ],
+          [
+            0.1,
+            100
+          ],
+          [
+            0.2,
+            200
+          ]
+        ],
+        "res": 0.067,
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "minmax",
+        "stats": {
+          "avg": 100,
+          "count": 3,
+          "max": 200,
+          "maxAt": 0.2,
+          "min": 0,
+          "minAt": 0,
+          "ok": true,
+          "p2p": 200,
+          "rms": 129.09944487358058
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "min"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "min",
+        "stats": {
+          "avg": 100,
+          "count": 3,
+          "max": 200,
+          "maxAt": 0.2,
+          "min": 0,
+          "minAt": 0,
+          "ok": true,
+          "p2p": 200,
+          "rms": 129.09944487358058
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "stats"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "minmax",
+        "stats": {
+          "avg": 100,
+          "count": 3,
+          "max": 200,
+          "maxAt": 0.2,
+          "min": 0,
+          "minAt": 0,
+          "ok": true,
+          "p2p": 200,
+          "rms": 129.09944487358058
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "derivative"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "derivative",
+        "rate": {
+          "avgRate": 1000,
+          "maxRate": 1000,
+          "maxRateAt": 0.1,
+          "ok": true,
+          "samples": 2
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "trend"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "trend",
+        "trend": {
+          "change": 200,
+          "direction": "rising",
+          "duration": 0.2,
+          "first": 0,
+          "last": 200,
+          "ok": true,
+          "slope": 999.9999999999998
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "peaks"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "peaks",
+        "peaks": {
+          "count": 0,
+          "maxPeak": 200,
+          "maxPeakAt": 0.2,
+          "ok": true,
+          "prominence": 10
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "TimeBootMs",
+        "op": "abnormal",
+        "conds": [
+          {
+            "op": "gt",
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "value": -1000000000
+          }
+        ]
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [],
+            "total": 0,
+            "value": 1000000000
+          },
+          {
+            "op": "lt",
+            "segs": [],
+            "total": 0,
+            "value": -1000000000
+          }
+        ],
+        "n": 3,
+        "name": "ATTITUDE.TimeBootMs",
+        "op": "abnormal",
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "Roll",
+        "op": "raw",
+        "maxPoints": 7
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.Roll",
+        "op": "raw",
+        "pts": [
+          [
+            0,
+            5.73
+          ],
+          [
+            0.1,
+            8.594
+          ],
+          [
+            0.2,
+            11.459
+          ]
+        ],
+        "res": 0.067,
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "Roll",
+        "startSec": -1000000000,
+        "endSec": -100000000,
+        "op": "minmax"
+      },
+      "resp": {
+        "n": 3,
+        "name": "ATTITUDE.Roll",
+        "op": "minmax",
+        "stats": {
+          "avg": 8.5943671261762,
+          "count": 3,
+          "max": 11.459156073371194,
+          "maxAt": 0.2,
+          "min": 5.729578036685597,
+          "minAt": 0,
+          "ok": true,
+          "p2p": 5.729578036685597,
+          "rms": 8.906991095720437
+        },
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "Roll",
+        "op": "bogus"
+      },
+      "resp": {
+        "error": "不支持的 operation: bogus",
+        "name": "ATTITUDE.Roll"
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "NoSuchField",
+        "op": "minmax"
+      },
+      "resp": {
+        "error": "type not found: ATTITUDE.NoSuchField",
+        "name": "ATTITUDE.NoSuchField",
+        "op": "minmax"
+      }
+    },
+    {
+      "req": {
+        "type": "ATTITUDE",
+        "field": "Pitch",
+        "op": "abnormal",
+        "threshold": 0
+      },
+      "resp": {
+        "abn": [
+          {
+            "op": "gt",
+            "segs": [
+              [
+                0,
+                0.2,
+                17.189,
+                17.189
+              ]
+            ],
+            "total": 0.2,
+            "value": 0
+          }
+        ],
+        "n": 3,
+        "name": "ATTITUDE.Pitch",
+        "op": "abnormal",
+        "win": [
+          0,
+          0.2
+        ]
+      }
+    }
+  ],
+  "status": {
+    "loaded": true,
+    "fileName": "wasm-parser\\tests\\fixtures\\apm_tlog\\apm_tlog.tlog"
+  },
+  "summary": {
+    "filename": "wasm-parser\\tests\\fixtures\\apm_tlog\\apm_tlog.tlog",
+    "fileSizeKB": 0.9443359375,
+    "vehicleType": "Copter",
+    "firmwareVersion": "ArduPilot",
+    "firmwareHash": "",
+    "hardwareType": "",
+    "freeRAM": 0,
+    "durationSecs": 0.4,
+    "totalLines": 21,
+    "frame": "QUADROTOR",
+    "airframe": "multirotor",
+    "typeCount": 6,
+    "startUnixSecs": 1704067200,
+    "hasUTC": true,
+    "startTimeMs": 1704067200000,
+    "format": "tlog"
+  },
+  "typeSchema": {
+    "ATTITUDE": {
+      "fields": [
+        {
+          "name": "TimeBootMs",
+          "glType": 5,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 200,
+          "count": 3
+        },
+        {
+          "name": "Roll",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 8,
+          "min": 5.729578036685597,
+          "max": 11.459156073371194,
+          "count": 3
+        },
+        {
+          "name": "Pitch",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 12,
+          "min": 11.459156073371194,
+          "max": 17.188734536943613,
+          "count": 3
+        },
+        {
+          "name": "Yaw",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 16,
+          "min": 17.188734536943613,
+          "max": 22.918312146742387,
+          "count": 3
+        },
+        {
+          "name": "Rollspeed",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 20,
+          "min": 0.5729577823242186,
+          "max": 0.5729577823242186,
+          "count": 3
+        },
+        {
+          "name": "Pitchspeed",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 24,
+          "min": 1.1459155646484371,
+          "max": 1.1459155646484371,
+          "count": 3
+        },
+        {
+          "name": "Yawspeed",
+          "glType": 6,
+          "scale": 57.29577951308232,
+          "offset": 28,
+          "min": 1.7188733469726556,
+          "max": 1.7188733469726556,
+          "count": 3
+        }
+      ],
+      "rowCount": 3,
+      "stride": 32,
+      "baseTimeMs": 1704067200000
+    },
+    "BATTERY_STATUS": {
+      "fields": [
+        {
+          "name": "Id",
+          "glType": 1,
+          "scale": 1,
+          "offset": 4,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "Temperature",
+          "glType": 2,
+          "scale": 1,
+          "offset": 6,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "Voltages[0]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 8,
+          "min": 12000,
+          "max": 12000,
+          "count": 1
+        },
+        {
+          "name": "Voltages[1]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 10,
+          "min": 12010,
+          "max": 12010,
+          "count": 1
+        },
+        {
+          "name": "Voltages[2]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 12,
+          "min": 12020,
+          "max": 12020,
+          "count": 1
+        },
+        {
+          "name": "Voltages[3]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 14,
+          "min": 12030,
+          "max": 12030,
+          "count": 1
+        },
+        {
+          "name": "Voltages[4]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 16,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "Voltages[5]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 18,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "Voltages[6]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 20,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "Voltages[7]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 22,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "Voltages[8]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 24,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "Voltages[9]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 26,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "CurrentBattery",
+          "glType": 2,
+          "scale": 0.01,
+          "offset": 28,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "CurrentConsumed",
+          "glType": 4,
+          "scale": 1,
+          "offset": 32,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "EnergyConsumed",
+          "glType": 4,
+          "scale": 1,
+          "offset": 36,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "BatteryRemaining",
+          "glType": 0,
+          "scale": 1,
+          "offset": 40,
+          "min": 90,
+          "max": 90,
+          "count": 1
+        },
+        {
+          "name": "TimeRemaining",
+          "glType": 4,
+          "scale": 1,
+          "offset": 44,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "VoltagesExt[0]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 48,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "VoltagesExt[1]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 50,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "VoltagesExt[2]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 52,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        },
+        {
+          "name": "VoltagesExt[3]",
+          "glType": 3,
+          "scale": 1,
+          "offset": 54,
+          "min": 65535,
+          "max": 65535,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 56,
+      "baseTimeMs": 1704067200090
+    },
+    "GLOBAL_POSITION_INT": {
+      "fields": [
+        {
+          "name": "TimeBootMs",
+          "glType": 5,
+          "scale": 1,
+          "offset": 4,
+          "min": 50,
+          "max": 150,
+          "count": 2
+        },
+        {
+          "name": "Lat",
+          "glType": 4,
+          "scale": 1e-7,
+          "offset": 8,
+          "min": 37,
+          "max": 37.000099999999996,
+          "count": 2
+        },
+        {
+          "name": "Lon",
+          "glType": 4,
+          "scale": 1e-7,
+          "offset": 12,
+          "min": -122,
+          "max": -121.9999,
+          "count": 2
+        },
+        {
+          "name": "Alt",
+          "glType": 4,
+          "scale": 0.001,
+          "offset": 16,
+          "min": 10,
+          "max": 10.1,
+          "count": 2
+        },
+        {
+          "name": "RelativeAlt",
+          "glType": 4,
+          "scale": 0.001,
+          "offset": 20,
+          "min": 5,
+          "max": 5.1000000000000005,
+          "count": 2
+        },
+        {
+          "name": "Vx",
+          "glType": 2,
+          "scale": 0.01,
+          "offset": 24,
+          "min": 0.1,
+          "max": 0.12,
+          "count": 2
+        },
+        {
+          "name": "Vy",
+          "glType": 2,
+          "scale": 0.01,
+          "offset": 26,
+          "min": -0.05,
+          "max": -0.04,
+          "count": 2
+        },
+        {
+          "name": "Vz",
+          "glType": 2,
+          "scale": 0.01,
+          "offset": 28,
+          "min": 0,
+          "max": 0.01,
+          "count": 2
+        },
+        {
+          "name": "Hdg",
+          "glType": 3,
+          "scale": 1,
+          "offset": 30,
+          "min": 27000,
+          "max": 27100,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 32,
+      "baseTimeMs": 1704067200050
+    },
+    "RC_CHANNELS": {
+      "fields": [
+        {
+          "name": "TimeBootMs",
+          "glType": 5,
+          "scale": 1,
+          "offset": 4,
+          "min": 95,
+          "max": 105,
+          "count": 2
+        },
+        {
+          "name": "Chancount",
+          "glType": 1,
+          "scale": 1,
+          "offset": 8,
+          "min": 8,
+          "max": 8,
+          "count": 2
+        },
+        {
+          "name": "Chan1Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 10,
+          "min": 1500,
+          "max": 1520,
+          "count": 2
+        },
+        {
+          "name": "Chan2Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 12,
+          "min": 1510,
+          "max": 1530,
+          "count": 2
+        },
+        {
+          "name": "Chan3Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 14,
+          "min": 1600,
+          "max": 1650,
+          "count": 2
+        },
+        {
+          "name": "Chan4Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 16,
+          "min": 1470,
+          "max": 1490,
+          "count": 2
+        },
+        {
+          "name": "Chan5Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 18,
+          "min": 1000,
+          "max": 1000,
+          "count": 2
+        },
+        {
+          "name": "Chan6Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 20,
+          "min": 2000,
+          "max": 2000,
+          "count": 2
+        },
+        {
+          "name": "Chan7Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 22,
+          "min": 1000,
+          "max": 1000,
+          "count": 2
+        },
+        {
+          "name": "Chan8Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 24,
+          "min": 1000,
+          "max": 1000,
+          "count": 2
+        },
+        {
+          "name": "Chan9Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 26,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan10Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 28,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan11Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 30,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan12Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 32,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan13Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 34,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan14Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 36,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan15Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 38,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan16Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 40,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan17Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 42,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Chan18Raw",
+          "glType": 3,
+          "scale": 1,
+          "offset": 44,
+          "min": 0,
+          "max": 0,
+          "count": 2
+        },
+        {
+          "name": "Rssi",
+          "glType": 1,
+          "scale": 1,
+          "offset": 46,
+          "min": 253,
+          "max": 253,
+          "count": 2
+        }
+      ],
+      "rowCount": 2,
+      "stride": 48,
+      "baseTimeMs": 1704067200095
+    },
+    "SYS_STATUS": {
+      "fields": [
+        {
+          "name": "Load",
+          "glType": 3,
+          "scale": 1,
+          "offset": 4,
+          "min": 300,
+          "max": 300,
+          "count": 1
+        },
+        {
+          "name": "VoltageBattery",
+          "glType": 3,
+          "scale": 1,
+          "offset": 6,
+          "min": 12000,
+          "max": 12000,
+          "count": 1
+        },
+        {
+          "name": "CurrentBattery",
+          "glType": 2,
+          "scale": 0.01,
+          "offset": 8,
+          "min": 1,
+          "max": 1,
+          "count": 1
+        },
+        {
+          "name": "BatteryRemaining",
+          "glType": 0,
+          "scale": 1,
+          "offset": 10,
+          "min": 90,
+          "max": 90,
+          "count": 1
+        },
+        {
+          "name": "DropRateComm",
+          "glType": 3,
+          "scale": 1,
+          "offset": 12,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "ErrorsComm",
+          "glType": 3,
+          "scale": 1,
+          "offset": 14,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "ErrorsCount1",
+          "glType": 3,
+          "scale": 1,
+          "offset": 16,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "ErrorsCount2",
+          "glType": 3,
+          "scale": 1,
+          "offset": 18,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "ErrorsCount3",
+          "glType": 3,
+          "scale": 1,
+          "offset": 20,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        },
+        {
+          "name": "ErrorsCount4",
+          "glType": 3,
+          "scale": 1,
+          "offset": 22,
+          "min": 0,
+          "max": 0,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 24,
+      "baseTimeMs": 1704067200120
+    },
+    "VFR_HUD": {
+      "fields": [
+        {
+          "name": "Airspeed",
+          "glType": 6,
+          "scale": 1,
+          "offset": 4,
+          "min": 5,
+          "max": 5,
+          "count": 1
+        },
+        {
+          "name": "Groundspeed",
+          "glType": 6,
+          "scale": 1,
+          "offset": 8,
+          "min": 6,
+          "max": 6,
+          "count": 1
+        },
+        {
+          "name": "Heading",
+          "glType": 2,
+          "scale": 1,
+          "offset": 12,
+          "min": 270,
+          "max": 270,
+          "count": 1
+        },
+        {
+          "name": "Throttle",
+          "glType": 3,
+          "scale": 1,
+          "offset": 14,
+          "min": 40,
+          "max": 40,
+          "count": 1
+        },
+        {
+          "name": "Alt",
+          "glType": 6,
+          "scale": 1,
+          "offset": 16,
+          "min": 51,
+          "max": 51,
+          "count": 1
+        },
+        {
+          "name": "Climb",
+          "glType": 6,
+          "scale": 1,
+          "offset": 20,
+          "min": 0.5,
+          "max": 0.5,
+          "count": 1
+        }
+      ],
+      "rowCount": 1,
+      "stride": 24,
+      "baseTimeMs": 1704067200110
+    }
+  }
+}
