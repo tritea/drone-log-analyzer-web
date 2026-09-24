@@ -8,9 +8,15 @@
 
 架构要点：日志解析在前端 **Rust WASM**（[`wasm-parser/`](wasm-parser/)）完成；地图瓦片直连 provider https；配置（含 LLM creds）存浏览器 localStorage——**服务端无日志/配置状态**，只保留 Agent WebSocket（`/agent/ws`）与 3D 资产文件端点。
 
+## Docker 使用
+
+```bash
+docker pull tritea/drone-log-analyzer:latest
+```
+
 ## 环境要求
 
-- Go 1.25 或更高版本
+- Go 1.26 或更高版本
 - Node.js（首次/换机后在仓库根执行 `npm install`）
 - Rust（仅改解析器时需要，wasm 产物已入库；工具链在 `~/.cargo/bin`）
 - Windows 下可选安装 `make`
