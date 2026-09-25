@@ -9,7 +9,7 @@
 #   Go 交叉编译（CGO_ENABLED=0 + GOARCH=$TARGETARCH）。
 
 # ---- 构建阶段：Go 静态交叉编译 ----
-FROM --platform=$BUILDPLATFORM golang:1.25-alpine AS build
+FROM --platform=$BUILDPLATFORM golang:1.26-alpine AS build
 
 # buildx 自动注入；普通 docker build 默认取宿主平台
 ARG TARGETOS

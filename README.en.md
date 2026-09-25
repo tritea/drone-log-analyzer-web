@@ -40,7 +40,7 @@ All data is processed and stored in the browser: logs are parsed in the browser,
 
 ## Requirements
 
-- Go 1.25 or later
+- Go 1.26 or later
 - Node.js (run `npm install` at the repo root on first setup / new machine)
 - Rust (only needed when modifying the parser; wasm artifacts are committed)
 
