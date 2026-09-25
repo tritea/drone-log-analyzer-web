@@ -207,13 +207,21 @@ class AgentWsClient implements AgentClient {
 
   private async answerDataRequest(callId: string, q: DataQuery): Promise<void> {
     let payload: unknown;
+    let error: string | undefined;
     try {
       payload = await this.runQuery(q);
     } catch (e) {
-      payload = { error: e instanceof Error ? e.message : String(e) };
+      // 查询失败走帧级 error（不塞进 payload）：Go 桥接层据此把错误
+      // 原文返回给工具调用——塞进 payload 会被当数据解码，真实原因
+      // （如 type not found）丢失成 unmarshal 报错。
+      error = e instanceof Error ? e.message : String(e);
     }
     try {
-      this.send({ type: 'data_response', callId, payload });
+      this.send(
+        error === undefined
+          ? { type: 'data_response', callId, payload }
+          : { type: 'data_response', callId, error }
+      );
     } catch (e) {
       console.error('[agent-ws] data_response failed:', e);
     }
