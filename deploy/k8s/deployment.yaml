@@ -1,0 +1,68 @@
+# DroneLogAnalyzer 服务端：无状态（日志解析在前端 wasm、配置在 localStorage、
+# LLM creds 由 WS init 帧推送），可任意多副本；tileset/模型功能冻结期无持久卷。
+# 网关（nginx 等）代理到配套 Service drone-log-analyzer:8642，见 deploy/README.md。
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drone-log-analyzer
+  labels:
+    app.kubernetes.io/name: drone-log-analyzer
+    app.kubernetes.io/component: web
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: drone-log-analyzer
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: drone-log-analyzer
+        app.kubernetes.io/component: web
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: web
+          # 替换为你的镜像仓库地址
+          image: drone-log-analyzer:latest
+          ports:
+            - name: http
+              containerPort: 8642
+          # / 命中嵌入的 SPA index.html，返回 200，天然可作探针
+          startupProbe:
+            httpGet:
+              path: /
+              port: http
+            periodSeconds: 2
+            failureThreshold: 30
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            periodSeconds: 20
+            failureThreshold: 3
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: "1"
+              memory: 512Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL

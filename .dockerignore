@@ -1,0 +1,13 @@
+# 白名单：构建上下文只保留 Go 编译 + go:embed 需要的内容。
+# （.git / node_modules / wasm-parser / 前端源码一律不进上下文；wasm 资产
+#  已由 vite build 打进 frontend/dist，无需 Rust 工具链与前端源码。）
+# 注意：白名单须用 ** （匹配任意深度）并逐级恢复目录，单 * 只匹配根层。
+**
+!go.mod
+!go.sum
+!main.go
+!app
+!app/**
+!frontend
+!frontend/dist
+!frontend/dist/**

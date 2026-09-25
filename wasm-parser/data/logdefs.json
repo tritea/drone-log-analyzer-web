@@ -1,0 +1,311 @@
+{
+  "commands": {
+    "101": "DO_SET_FOCUS",
+    "115": "CONDITION_DELAY",
+    "116": "CONDITION_CHANGE_ALT",
+    "117": "CONDITION_DISTANCE",
+    "118": "CONDITION_YAW",
+    "119": "CONDITION_LAST",
+    "120": "DO_SET_SERVO",
+    "121": "DO_REPEAT_SERVO",
+    "122": "DO_SET_RELAY",
+    "123": "DO_REPEAT_RELAY",
+    "128": "DO_MOUNT_CONTROL",
+    "129": "DO_SET_CAM_TRIGG_INTERVAL",
+    "130": "DO_FENCE_ENABLE",
+    "131": "DO_PARACHUTE",
+    "132": "DO_GPS_SWITCH",
+    "133": "DO_INVERTED_FLIGHT",
+    "134": "DO_DIGICAM_CONTROL",
+    "135": "DO_SET_CAM_TRIGG_DIST2",
+    "136": "DO_CONTROL_VIDEO",
+    "137": "DO_SET_ROI",
+    "140": "DO_LAST",
+    "141": "DO_AUX_FUNCTION",
+    "142": "DO_MOUNT_CONFIGURE",
+    "143": "DO_MOUNT_CONTROL_QUAT",
+    "144": "DO_GUIDED_MASTER",
+    "145": "DO_GUIDED_LIMITS",
+    "146": "DO_ENGINE_CONTROL",
+    "147": "DO_SET_MISSION_CURRENT",
+    "148": "DO_LAST",
+    "149": "DO_SET_RELAY",
+    "159": "DO_MOUNT_TRACK",
+    "16": "NAV_WAYPOINT",
+    "17": "NAV_LOITER_UNLIM",
+    "176": "DO_SET_ROI",
+    "177": "DO_GUIDED_LIMITS",
+    "178": "DO_FENCE_ENABLE",
+    "179": "DO_PARACHUTE",
+    "18": "NAV_LOITER_TURNS",
+    "181": "DO_START_MAG_CAL",
+    "182": "DO_ACCEPT_MAG_CAL",
+    "183": "DO_SET_CAM_TRIGG_DIST",
+    "184": "DO_VTOL_TRANSITION",
+    "185": "DO_MOUNT_CONFIGURE",
+    "186": "DO_SET_RESUME_REPEAT_DIST",
+    "189": "DO_LAST",
+    "19": "NAV_LOITER_TIME",
+    "192": "DO_DELAY_COMMAND",
+    "193": "DO_DISTANCE_INIT_COMMAND",
+    "194": "DO_FIGURE_EIGHT",
+    "195": "DO_LAND_START2",
+    "20": "NAV_RETURN_TO_LAUNCH",
+    "201": "DO_SET_ROI_LOCATION",
+    "202": "DO_SET_ROI_WPNEXT_OFFSET",
+    "203": "DO_SET_ROI_NONE",
+    "204": "DO_SET_ROI_SYSID",
+    "205": "DO_SET_ROI_CIRCLE",
+    "206": "DO_SET_ROI",
+    "21": "NAV_LAND",
+    "210": "DO_SET_CAM_TRIGG_DIST",
+    "211": "DO_SET_HOME_LOCATION",
+    "212": "DO_SET_HOME_YAW",
+    "22": "NAV_TAKEOFF",
+    "23": "NAV_LAND_LOCAL",
+    "24": "NAV_TAKEOFF_LOCAL",
+    "25": "NAV_FOLLOW",
+    "30": "NAV_CONTINUE_AND_CHANGE_ALT",
+    "31": "NAV_LOITER_TO_ALT",
+    "80": "NAV_CONTINUE_AND_CHANGE_ALT",
+    "81": "NAV_LOITER_TO_ALT",
+    "82": "DO_JUMP",
+    "83": "DO_CHANGE_SPEED",
+    "84": "DO_SET_HOME",
+    "85": "DO_SET_ROI",
+    "87": "DO_SET_MODE",
+    "88": "DO_JUMP_TAG",
+    "89": "DO_START_MAG_CAL",
+    "90": "DO_SET_CAM_TRIGG_DIST",
+    "94": "DO_LAND_START",
+    "95": "DO_SET_ROI_LOCATION",
+    "96": "DO_SET_ROI_WPNEXT_OFFSET",
+    "97": "DO_SET_ROI_NONE",
+    "98": "DO_SET_ROI_SYSID",
+    "99": "DO_SET_ROI_CIRCLE"
+  },
+  "errorCodes": {
+    "1": {
+      "1": "MAIN_INS_DELAY"
+    },
+    "11": {
+      "2": "GPS_GLITCH"
+    },
+    "12": {
+      "1": "CRASH_CHECK_CRASH",
+      "2": "CRASH_CHECK_LOSS_OF_CONTROL"
+    },
+    "13": {
+      "2": "FLIP_ABANDONED"
+    },
+    "15": {
+      "2": "PARACHUTE_TOO_LOW",
+      "3": "PARACHUTE_LANDED"
+    },
+    "16": {
+      "0": "EKFCHECK_VARIANCE_CLEARED",
+      "2": "EKFCHECK_BAD_VARIANCE"
+    },
+    "17": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "18": {
+      "2": "BARO_GLITCH",
+      "3": "BAD_DEPTH"
+    },
+    "2": {
+      "2": "RADIO_LATE_FRAME"
+    },
+    "20": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "21": {
+      "2": "MISSING_TERRAIN_DATA"
+    },
+    "22": {
+      "2": "FAILED_TO_SET_DESTINATION",
+      "3": "RESTARTED_RTL",
+      "4": "FAILED_CIRCLE_INIT",
+      "5": "DEST_OUTSIDE_FENCE",
+      "6": "RTL_MISSING_RNGFND"
+    },
+    "23": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "26": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "27": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "29": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "30": {
+      "1": "INTERNAL_ERRORS_DETECTED"
+    },
+    "31": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "5": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "6": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "7": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "8": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    },
+    "9": {
+      "0": "FAILSAFE_RESOLVED",
+      "1": "FAILSAFE_OCCURRED"
+    }
+  },
+  "errorSubsystems": {
+    "1": "MAIN",
+    "10": "FLIGHT_MODE",
+    "11": "GPS",
+    "12": "CRASH_CHECK",
+    "13": "FLIP",
+    "14": "AUTOTUNE",
+    "15": "PARACHUTES",
+    "16": "EKFCHECK",
+    "17": "FAILSAFE_EKFINAV",
+    "18": "BARO",
+    "19": "CPU",
+    "2": "RADIO",
+    "20": "FAILSAFE_ADSB",
+    "21": "TERRAIN",
+    "22": "NAVIGATION",
+    "23": "FAILSAFE_TERRAIN",
+    "24": "EKF_PRIMARY",
+    "25": "THRUST_LOSS_CHECK",
+    "26": "FAILSAFE_SENSORS",
+    "27": "FAILSAFE_LEAK",
+    "28": "PILOT_INPUT",
+    "29": "FAILSAFE_VIBE",
+    "3": "COMPASS",
+    "30": "INTERNAL_ERROR",
+    "31": "FAILSAFE_DEADRECKON",
+    "4": "OPTFLOW",
+    "5": "FAILSAFE_RADIO",
+    "6": "FAILSAFE_BATT",
+    "7": "FAILSAFE_GPS",
+    "8": "FAILSAFE_GCS",
+    "9": "FAILSAFE_FENCE"
+  },
+  "events": {
+    "10": "ARMED（解锁）",
+    "11": "DISARMED（加锁）",
+    "15": "AUTO_ARMED（自动解锁起飞）",
+    "163": "SURFACED",
+    "164": "NOT_SURFACED",
+    "165": "BOTTOMED",
+    "166": "NOT_BOTTOMED",
+    "17": "LAND_COMPLETE_MAYBE（可能已着陆）",
+    "18": "LAND_COMPLETE（着陆完成）",
+    "19": "LOST_GPS（GPS 失锁）",
+    "21": "FLIP_START",
+    "22": "FLIP_END",
+    "25": "SET_HOME（设定 Home 点）",
+    "26": "SET_SIMPLE_ON",
+    "27": "SET_SIMPLE_OFF",
+    "28": "NOT_LANDED（已离地）",
+    "29": "SET_SUPERSIMPLE_ON",
+    "30": "AUTOTUNE_INITIALISED",
+    "31": "AUTOTUNE_OFF",
+    "32": "AUTOTUNE_RESTART",
+    "33": "AUTOTUNE_SUCCESS",
+    "34": "AUTOTUNE_FAILED",
+    "35": "AUTOTUNE_REACHED_LIMIT",
+    "36": "AUTOTUNE_PILOT_TESTING",
+    "37": "AUTOTUNE_SAVEDGAINS",
+    "38": "SAVE_TRIM",
+    "39": "SAVEWP_ADD_WP",
+    "41": "FENCE_ENABLE（围栏启用）",
+    "42": "FENCE_DISABLE（围栏停用）",
+    "43": "ACRO_TRAINER_OFF",
+    "44": "ACRO_TRAINER_LEVELING",
+    "45": "ACRO_TRAINER_LIMITED",
+    "46": "GRIPPER_GRAB",
+    "47": "GRIPPER_RELEASE",
+    "49": "PARACHUTE_DISABLED",
+    "50": "PARACHUTE_ENABLED",
+    "51": "PARACHUTE_RELEASED（降落伞已释放）",
+    "52": "LANDING_GEAR_DEPLOYED（起落架已放下）",
+    "53": "LANDING_GEAR_RETRACTED（起落架已收起）",
+    "54": "MOTORS_EMERGENCY_STOPPED（电机急停）",
+    "55": "MOTORS_EMERGENCY_STOP_CLEARED（电机急停解除）",
+    "56": "MOTORS_INTERLOCK_DISABLED",
+    "57": "MOTORS_INTERLOCK_ENABLED",
+    "58": "ROTOR_RUNUP_COMPLETE（旋翼加速完成）",
+    "59": "ROTOR_SPEED_BELOW_CRITICAL（旋翼低于临界转速）",
+    "60": "EKF_ALT_RESET（EKF 高度复位）",
+    "61": "LAND_CANCELLED_BY_PILOT（飞行员取消着陆）",
+    "62": "EKF_YAW_RESET（EKF 航向复位）",
+    "63": "AVOIDANCE_ADSB_ENABLE",
+    "64": "AVOIDANCE_ADSB_DISABLE",
+    "65": "AVOIDANCE_PROXIMITY_ENABLE",
+    "66": "AVOIDANCE_PROXIMITY_DISABLE",
+    "67": "GPS_PRIMARY_CHANGED（GPS 主从切换）",
+    "71": "ZIGZAG_STORE_A",
+    "72": "ZIGZAG_STORE_B",
+    "73": "LAND_REPO_ACTIVE",
+    "74": "STANDBY_ENABLE",
+    "75": "STANDBY_DISABLE",
+    "80": "FENCE_FLOOR_ENABLE",
+    "81": "FENCE_FLOOR_DISABLE",
+    "85": "EK3_SOURCES_SET_TO_PRIMARY（EK3 源切主）",
+    "86": "EK3_SOURCES_SET_TO_SECONDARY（EK3 源切备）",
+    "87": "EK3_SOURCES_SET_TO_TERTIARY（EK3 源切第三）",
+    "90": "AIRSPEED_PRIMARY_CHANGED（空速计主从切换）"
+  },
+  "frames": {
+    "0": "GLOBAL",
+    "1": "LOCAL_NED",
+    "10": "GLOBAL_TERRAIN_ALT",
+    "11": "GLOBAL_TERRAIN_ALT_INT",
+    "12": "LOCAL_FRD",
+    "13": "GLOBAL_RELATIVE_ALT_MSL_INT",
+    "14": "LOCAL_FLU",
+    "2": "MISSION",
+    "3": "GLOBAL_RELATIVE_ALT",
+    "4": "LOCAL_ENU",
+    "5": "GLOBAL_INT",
+    "6": "GLOBAL_RELATIVE_ALT_INT",
+    "7": "LOCAL_OFFSET_NED",
+    "8": "BODY_NED",
+    "9": "BODY_OFFSET_NED"
+  },
+  "generalErrorCodes": {
+    "0": "ERROR_RESOLVED",
+    "1": "FAILED_TO_INITIALISE",
+    "4": "UNHEALTHY"
+  },
+  "results": {
+    "0": "ACCEPTED",
+    "1": "TEMPORARILY_REJECTED",
+    "2": "DENIED",
+    "3": "UNSUPPORTED",
+    "4": "FAILED",
+    "5": "IN_PROGRESS",
+    "6": "CANCELLED",
+    "7": "COMMAND_LONG_ONLY",
+    "8": "COMMAND_INT_ONLY",
+    "9": "COMMAND_UNSUPPORTED_MAV_FRAME"
+  }
+}

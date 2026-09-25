@@ -1,0 +1,457 @@
+// 移动端小屏适配样式。
+// 断点与 modules/shared/utils/viewport.ts 的 MOBILE_QUERY 保持一致：
+// （≤768px）或触屏（pointer: coarse）——逗号=或。
+// 本文件必须最后引入（覆盖 _layout/_view3d 的窄屏列宽规则）。
+// 覆盖范围：主布局单列、曲线列表 drawer、弹窗全屏化、可视化右栏悬浮卡、
+// 工具栏换行压缩、播放时间轴压缩。
+
+@media (max-width: 768px), (pointer: coarse) {
+
+  /* ---------------- 基底：以动态视口高度铺满（地址栏收展不遮内容） ---------------- */
+  #app {
+    bottom: auto;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  /* ---------------- 主布局：单列，侧栏让位给 drawer ---------------- */
+  .main,
+  .main.view-three {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .panel-left {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 80;
+    width: min(86vw, 360px);
+    transform: translateX(-102%);
+    transition: transform 0.22s ease;
+    box-shadow: var(--shadow-md);
+  }
+  .panel-left.is-open { transform: none; }
+  .panel-left.is-expanded { width: 100vw; }
+
+  .drawer-bar {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 8px 6px 14px;
+    border-bottom: 1px solid var(--border-soft);
+    background: var(--surface);
+  }
+  .drawer-bar strong { font-size: 13px; font-weight: 800; }
+  .drawer-bar-actions { display: flex; gap: 6px; }
+
+  /* ---------------- 顶部工具栏：左侧原位（logo/打开/视图/曲线列表），右侧收纳进工具侧栏 ---------------- */
+  .chart-toolbar {
+    height: auto;
+    min-height: 50px;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    padding: 6px 8px;
+  }
+  .topbar-spacer { display: none; }
+  .topbar-actions { margin-left: auto; }
+
+  /* ---------------- 弹窗全屏化 ---------------- */
+  /* 弹窗压过曲线列表 drawer（z 80）与遮罩（75）：添加曲线等弹层不再被挡在后面 */
+  .modal-backdrop { padding: 0; z-index: 120; }
+  .field-edit-head {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .field-edit-head-title { min-width: 0; }
+  .field-edit-head-title strong { display: block; }
+  .field-edit-head-title small {
+    display: block;
+    overflow: hidden;
+    color: var(--text3);
+    font-size: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .field-edit-head-tools {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .field-edit-head-tools .field-name-input { width: 104px; }
+  .field-edit-head-tools .field-edit-count { white-space: nowrap; }
+  .modal-backdrop .modal {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+  }
+  .native-dialog {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+  }
+  .field-delete-dialog[open] {
+    display: flex !important;
+    flex-direction: column;
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 0 !important;
+  }
+  .field-delete-dialog[open] .dialog-body { flex: 1 1 auto; overflow-y: auto; }
+
+  /* 设置弹窗（.settings-modal，scoped 样式）的全屏化就地在 Settings.vue 内覆盖，保证特异性。 */
+
+  /* 工具栏"开关"弹层 → 底部抽屉（原为锚定浮层，带内联定位需强制覆盖） */
+  .stats-overflow-popup {
+    top: auto !important;
+    right: 0 !important;
+    bottom: 0;
+    left: 0 !important;
+    width: auto;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  /* ---------------- 可视化：右栏 → 星舰式底部 HUD 条（半透明黑底） ---------------- */
+  /* 中栏贴满全屏（曲线图与可视化一致）：去掉左右内边距（专注/全屏观感整屏铺开）。
+   * 折线图坐标轴标签画在画布自有 gutter 内，容器铺满不受影响。 */
+  .panel-center {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .three-view {
+    position: relative;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) 44px;
+  }
+  .three-view.three-curve-on {
+    grid-template-rows: minmax(0, 1fr) var(--three-curve-h, 150px);
+  }
+
+  /* HUD：马鞍形——两端圆形姿态球（磨砂玻璃）、中间下沉细数据条（左右分布）。
+   * 容器本身不铺底色不占视觉，遮挡最小化；侧栏编辑面板打开时整条让位隐藏。 */
+  .three-side {
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: 48px;
+    z-index: 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    box-shadow: none;
+  }
+  .three-side.hud-hidden { display: none; }
+
+  .attitude-card {
+    display: contents;
+  }
+  .attitude-card-head { display: none; }
+
+  /* 两端姿态球：72px 圆、磨砂玻璃（看得清姿态细节）。 */
+  .attitude-panel,
+  .attitude-dial {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background: rgba(10, 15, 26, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  .attitude-panel { order: 0; }
+  .attitude-dial { order: 2; }
+  .attitude-panel .attitude-canvas,
+  .attitude-dial .attitude-dial-body { background: none; }
+
+  /* 中段下沉数据条：36px 细药丸、磨砂玻璃，小块左右分布排开、溢出横滚。 */
+  .metrics-panel {
+    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 36px;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    background: rgba(10, 15, 26, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  .metrics-panel .three-side-head { display: none; }
+  .metrics-panel .three-side-scroll {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: visible;
+  }
+  .metric-grid {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 0 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .metric-tile {
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 26px;
+    padding: 0 8px;
+    border: none;
+    border-left: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: none;
+  }
+  .metric-tile span { color: #94a3b8; font-size: 9px; }
+  .metric-tile strong { color: #f8fafc; font-size: 11px; }
+  /* 图标提亮：与深底拉开对比（原 #94a3b8 与背景太近看不清）。 */
+  .metric-tile .metric-main { color: #e2e8f0; padding: 0; }
+  /* 电机输出（电机条块）小屏先隐藏：与细条形态不合，桌面侧栏不受影响。 */
+  .metric-tile.metric-motors { display: none; }
+
+  /* 侧栏编辑面板（自定义模型/tilesets）：HUD 让位后整卡显示（fixed 钉右上，避开底条）。 */
+  .custom-models-side {
+    position: fixed;
+    top: 54px;
+    right: 6px;
+    bottom: 128px;
+    width: min(84vw, 320px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+
+  /* RC 摇杆：抬升到姿态球上方（球顶 = bottom 48+72）。
+   * !important 压过 Map2dView scoped 的 .geo-board .rc-hud-overlay .rc-stick-pad[bottom:40]。 */
+  .rc-hud-overlay .rc-stick-pad { bottom: 128px !important; }
+
+  /* 2D 地图 attribution：贴地图底边居中——落在数据药丸（66..102）与时间轴（0..44）
+   * 之间的空带里，左右是姿态球、不压任何控件（选择器叠层压过 Map2dView scoped 规则）。 */
+  .geo-board .leaflet-bottom.leaflet-right {
+    top: auto;
+    bottom: 6px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+  .geo-board .leaflet-bottom.leaflet-right .leaflet-control-attribution {
+    max-width: 200px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: rgba(15, 23, 42, 0.55);
+    color: #cbd5e1;
+    font-size: 9px;
+    line-height: 16px;
+  }
+
+  /* ---------------- 小屏工具侧栏（工具栏收纳） ---------------- */
+  .tool-sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 85;
+    background: rgba(15, 23, 42, 0.34);
+  }
+  .tool-sheet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 86;
+    width: min(78vw, 320px);
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    animation: tool-sheet-in 0.2s ease-out both;
+  }
+  @keyframes tool-sheet-in {
+    from { transform: translateX(24px); opacity: 0.4; }
+    to { transform: none; opacity: 1; }
+  }
+  .tool-sheet-head {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 10px 8px 14px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .tool-sheet-head strong { font-size: 13px; font-weight: 800; }
+  .tool-sheet-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 4px 0 16px;
+  }
+  .tool-sheet-group {
+    padding: 10px 14px 4px;
+  }
+  .tool-sheet-group + .tool-sheet-group {
+    border-top: 1px solid var(--border-soft);
+  }
+  .tool-sheet-group-title {
+    margin-bottom: 7px;
+    color: var(--text3);
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .tool-sheet-group-title + .tool-sheet-group-title {
+    margin-top: 10px;
+  }
+
+  /* 列表式单选（渲染器/相机）：整行点击，名称在左、选中圆点在右。 */
+  .sheet-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .sheet-option {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 2px;
+    border: none;
+    border-bottom: 1px solid var(--border-soft);
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+  }
+  .sheet-option:last-child { border-bottom: none; }
+  .sheet-option-name {
+    color: var(--text2);
+    font-size: 13px;
+    font-weight: 650;
+  }
+  .sheet-option.is-active .sheet-option-name {
+    color: var(--blue);
+    font-weight: 750;
+  }
+  .sheet-option-dot {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    background: transparent;
+  }
+  .sheet-option.is-active .sheet-option-dot {
+    border-color: var(--blue);
+    background: radial-gradient(circle, var(--blue) 0 45%, transparent 50%);
+  }
+
+  /* 开关整行：名称在左、mini 开关在右。 */
+  .tool-sheet-toggles {
+    display: flex;
+    flex-direction: column;
+  }
+  .tool-sheet-toggles .chart-toggle {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 2px;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 13px;
+  }
+  .tool-sheet-toggles .chart-toggle:last-child { border-bottom: none; }
+
+  /* ---------------- 曲线图例行：不换行横向滚动，右端固定框选/重置 ---------------- */
+  .chart-legend {
+    flex-wrap: nowrap;
+    align-items: center;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 8px;
+  }
+  .chart-legend-item { flex: 0 0 auto; }
+  .chart-legend-actions {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+    padding: 0 0 0 10px;
+    border-left: 1px solid var(--border-soft);
+    background: #fff;
+    box-shadow: -6px 0 8px -6px rgba(15, 23, 42, 0.25);
+  }
+
+  /* ---------------- 播放时间轴：压缩 ----------------
+   * 改 flex 单行：grid 5 列时第 6 个子元素（专注退出钮）会被排到第二行被 44px 行高裁掉。 */
+  .three-timeline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+  }
+  .three-timeline .three-range { flex: 1 1 auto; min-width: 0; }
+  .three-timeline .app-btn { flex: 0 0 auto; }
+
+  /* ---------------- 零散 ---------------- */
+  .welcome { padding: 16px; }
+}
+
+/* drawer 遮罩：仅 mobile 渲染（v-if 门控），样式全局供 Home 复用。 */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 75;
+  background: rgba(15, 23, 42, 0.34);
+}
+
+/* 专注模式退出：可视化放播放时间轴行内（Timeline）/曲线轴面板（CurveAxis），
+ * 曲线图放图例行——均与既有控件同排，无常规浮动按钮。
+ * 曲线图无曲线（图例行不存在）时的兜底：极简角落图标、无底色。 */
+.focus-exit-fallback {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 90;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: rgba(100, 116, 139, 0.95);
+  cursor: pointer;
+}
+
+.focus-exit-fallback:hover { color: var(--text); background: rgba(148, 163, 184, 0.25); border-radius: 6px; }

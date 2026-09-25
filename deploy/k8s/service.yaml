@@ -1,0 +1,16 @@
+# ClusterIP：网关（nginx/Ingress-nginx 等）upstream 直指
+# drone-log-analyzer.<namespace>.svc:8642。不建 Ingress——由外部网关统一接。
+apiVersion: v1
+kind: Service
+metadata:
+  name: drone-log-analyzer
+  labels:
+    app.kubernetes.io/name: drone-log-analyzer
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: drone-log-analyzer
+  ports:
+    - name: http
+      port: 8642
+      targetPort: http
