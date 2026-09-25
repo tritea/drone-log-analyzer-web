@@ -217,7 +217,9 @@ export class CurveChart {
     this.cfg = cfg;
     this.bgColor = cfg.bgColor;
     this.hoverOn = !!cfg.tooltip;
-    this.rectZoomOn = !!cfg.rectZoom;
+    // 框选为 opt-in（默认拖拽=平移，鼠标/触屏一致）；cfg.rectZoom 只是
+    // 能力开关，激活态由 setRectZoomActive / Shift 按下驱动。
+    this.rectZoomOn = false;
 
     this.gl = new THREE.WebGLRenderer({ antialias: true, alpha: false });
     this.gl.setPixelRatio(window.devicePixelRatio || 1);
@@ -1003,9 +1005,10 @@ export class CurveChart {
     const rect = this.hostRect();
     const px = e.clientX - rect.left;
     const py = e.clientY - rect.top;
-    // 框选手势按指针类型分派：鼠标拖拽默认框选（桌面习惯，可经开关/Shift 关闭）；
-    // 触屏单指默认平移（框选经显式开关开启），双指恒为捏合缩放。
-    const wantRect = this.rectZoomOn || (e.pointerType !== 'touch' && !!this.cfg.rectZoom);
+    // 拖拽默认平移（鼠标/触屏一致，大屏小屏同语义）：仅框选开关开启或
+    // 按住 Shift（e.shiftKey，兜底全局 keydown 路径）时左键拖拽框选，
+    // 双指恒为捏合缩放。
+    const wantRect = !!this.cfg.rectZoom && (this.rectZoomOn || e.shiftKey);
     if (wantRect && this.rectEl && e.button !== 1) {
       this.pushPast();
       this.rectStart = { x: px, y: py };

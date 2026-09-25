@@ -163,7 +163,7 @@ store 的函数 `import { runtime } from '@/utils/runtime'` 读写它。用对�
 | 强制横屏门 | `viewport.ts syncLandscapeHint` + `LandscapeHint.vue` | 小屏竖屏即弹中央对话框（进入页面即检测、旋转即检测），仅「进入横屏」按钮（全屏 + `screen.orientation.lock`，不支持时提示手动旋转）；转横屏自动收回 |
 | 曲线操作按钮 | `ChartLegend` 右端 sticky 组 | 小屏框选/重置钉在图例行右端（图例不换行、横向滚动），专注模式下也可达；弹窗 z 提到 120 压过曲线 drawer；SimplePicker 搜索框小屏并入标题行省竖向空间 |
 
-触屏手势：`CurveChart` 与 3D 视口（`camera/rig.ts`）都走 Pointer Events——触屏单指=平移/轨道、双指=捏合缩放；鼠标拖拽默认=框选（`shiftZoomActive` 显式开关对两类指针统一生效），右键=重置视图；画布必须 `touch-action: none`（否则浏览器截断 pointer 流），拖拽手柄（播放头/高度条）同样已 pointer 化。X 轴带大小刻度尺（大刻度对齐网格线，小刻度 4/5 细分、过密自动隐藏，`minorTimeTicks`）。
+触屏手势：`CurveChart` 与 3D 视口（`camera/rig.ts`）都走 Pointer Events——触屏单指=平移/轨道、双指=捏合缩放；鼠标拖拽默认=平移（与触屏一致），框选仅在 `shiftZoomActive` 开关开启或按住 Shift 时生效（两类指针统一语义），右键=重置视图；画布必须 `touch-action: none`（否则浏览器截断 pointer 流），拖拽手柄（播放头/高度条）同样已 pointer 化。X 轴带大小刻度尺（大刻度对齐网格线，小刻度 4/5 细分、过密自动隐藏，`minorTimeTicks`）。
 
 ## 格式无关的字段源：profile
 
