@@ -17,7 +17,7 @@
 | `stop` | — | 取消进行中的一轮 |
 | `restore` | `fileName, messages` | 断线重连后推回本地持久化的上下文快照（`context_sync` 帧产出，前端原样存取不解析）；每文件每连接至多一次，须先于该文件首个 `chat` |
 | `clear` | `fileName` | 清空会话，回 `cleared` |
-| `data_response` | `callId, payload` | 工具数据回包（payload = wasm 查询结果 JSON；出错时 `{error}`） |
+| `data_response` | `callId, payload \| error` | 工具数据回包（payload = wasm 查询结果 JSON；查询失败走帧级 `error` 原文，不占 payload） |
 
 ### S → C 帧
 

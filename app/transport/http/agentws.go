@@ -3,6 +3,7 @@ package http
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"net/http"
 	"strconv"
 	"sync"
@@ -34,7 +35,7 @@ import (
 //	C→S {type:chat, message, level, fileName, summary}
 //	C→S {type:stop | clear,fileName}
 //	C→S {type:restore, fileName, messages}   断线重连后推回持久化上下文
-//	C→S {type:data_response, callId, payload}
+//	C→S {type:data_response, callId, payload|error}
 //	S→C {type:ready | agent_event,event | chat_result,ok,message|error
 //	     | context_sync,fileName,messages | cleared
 //	     | data_request,callId,query | error,error}
@@ -73,6 +74,7 @@ type inboundFrame struct {
 	Messages json.RawMessage       `json:"messages,omitempty"` // restore：前端持久化的上下文快照
 	CallID   string                `json:"callId,omitempty"`
 	Payload  json.RawMessage       `json:"payload,omitempty"`
+	Error    string                `json:"error,omitempty"` // data_response 查询失败：帧级错误原文
 }
 
 // agentSession 是一条 WS 连接的全部状态：agent 服务实例 + 数据桥。
@@ -91,17 +93,26 @@ type dataBridge struct {
 	s       *agentSession
 	mu      sync.Mutex
 	seq     int
-	pending map[string]chan json.RawMessage
+	pending map[string]chan dataResult
+}
+
+// dataResult：一次查询的回包，payload 与 err 二取一。查询失败由前端
+// 以帧级 error 字段带回（wasm 查询层异常原文），不伪装成载荷——否则
+// 错误信封会被当数据解码，真实原因丢失（如 type not found 被吞成
+// unmarshal 报错）。
+type dataResult struct {
+	payload json.RawMessage
+	err     error
 }
 
 func (b *dataBridge) Query(ctx context.Context, q agentservice.Query) (json.RawMessage, error) {
 	b.mu.Lock()
 	if b.pending == nil {
-		b.pending = make(map[string]chan json.RawMessage)
+		b.pending = make(map[string]chan dataResult)
 	}
 	b.seq++
 	id := strconv.Itoa(b.seq)
-	ch := make(chan json.RawMessage, 1)
+	ch := make(chan dataResult, 1)
 	b.pending[id] = ch
 	b.mu.Unlock()
 	defer func() {
@@ -114,8 +125,11 @@ func (b *dataBridge) Query(ctx context.Context, q agentservice.Query) (json.RawM
 		return nil, err
 	}
 	select {
-	case v := <-ch:
-		return v, nil
+	case r := <-ch:
+		if r.err != nil {
+			return nil, r.err
+		}
+		return r.payload, nil
 	case <-time.After(dataQueryTimeout):
 		return nil, agentservice.ErrDataTimeout
 	case <-ctx.Done():
@@ -123,13 +137,13 @@ func (b *dataBridge) Query(ctx context.Context, q agentservice.Query) (json.RawM
 	}
 }
 
-func (b *dataBridge) resolve(callID string, payload json.RawMessage) {
+func (b *dataBridge) resolve(callID string, payload json.RawMessage, err error) {
 	b.mu.Lock()
 	ch := b.pending[callID]
 	delete(b.pending, callID)
 	b.mu.Unlock()
 	if ch != nil {
-		ch <- payload
+		ch <- dataResult{payload: payload, err: err}
 	}
 }
 
@@ -265,7 +279,11 @@ func (s *agentSession) handleFrame(raw []byte) bool {
 		}
 		_ = s.sendFrame(map[string]any{"type": "cleared"})
 	case "data_response":
-		s.data.resolve(f.CallID, f.Payload)
+		if f.Error != "" {
+			s.data.resolve(f.CallID, nil, errors.New(f.Error))
+		} else {
+			s.data.resolve(f.CallID, f.Payload, nil)
+		}
 	default:
 		s.sendError("unknown frame type: " + f.Type)
 	}
